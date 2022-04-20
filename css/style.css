@@ -18,9 +18,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-.menu {
-  margin-bottom: 100px;
-}
 .menu .menu-1 {
   font-family: "Quicksand", sans-serif;
   display: grid;
@@ -40,6 +37,7 @@ nav ul li a {
   background-color: lightblue;
   padding: 10px 5px;
   transition: background-color 0.5s;
+  color: black;
 }
 .menu .menu-1 .palabra1:hover {
   background-color: lightcoral;
@@ -78,7 +76,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1000px) {
-  .menu-1 {
+  .menu {
     font-family: "Quicksand", sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -101,6 +99,23 @@ nav ul li a {
 @font-face {
   font-family: amsterdam;
   src: url(../Tipografía/Amsterdam/Amsterdam\ 400.ttf);
+}
+header h2 a {
+  color: black;
+}
+
+.novedades {
+  margin-top: 100px;
+}
+
+.carrusel-novedades {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.imagen_nuestros_trabajos {
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,20 +19,19 @@ body {
 }
 
 
-nav{
-    ul{
-        li{
-            a{ color: black;
-            text-decoration: none;
-        }
+nav {
+    ul {
+        li {
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 }
 
 
 .menu {
-
-    margin-bottom: 100px;
 
     .menu-1 {
 
@@ -52,36 +51,41 @@ nav{
 
         .palabra1 {
             @include palabras(lightblue, 10px 5px, background-color 0.5s);
+            color: black;
 
-            &:hover{
+            &:hover {
                 background-color: lightcoral;
             }
         }
 
         .palabra2 {
             @include palabras(lightblue, 10px 5px, background-color 0.5s);
-            &:hover{
+
+            &:hover {
                 background-color: lightcoral;
             }
         }
 
         .palabra3 {
             @include palabras(lightblue, 10px 5px, background-color 0.5s);
-            &:hover{
+
+            &:hover {
                 background-color: lightcoral;
             }
         }
 
         .palabra4 {
             @include palabras(lightblue, 10px 5px, background-color 0.5s);
-            &:hover{
+
+            &:hover {
                 background-color: lightcoral;
             }
         }
 
         .palabra5 {
             @include palabras(lightblue, 10px 5px, background-color 0.5s);
-            &:hover{
+
+            &:hover {
                 background-color: lightcoral;
             }
         }
@@ -90,7 +94,7 @@ nav{
 
 @media screen and (max-width: 1000px) {
 
-    .menu-1 {
+    .menu {
         font-family: 'Quicksand', sans-serif;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
