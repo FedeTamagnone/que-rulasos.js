@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.estructura-footer{
+    display: flex;
+}
+
+.nav-footer {
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+.logo-footer {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.instagram {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.instagram img {
+    width: 100px;
+}
+
+/* ---------------------------------- Media --------------------------------- */
+
+@media screen and (max-width: 1000px) {
+    div .logo-footer {
+        display: none;
+    }
+
+    .instagram img {
+        width: 50px;
+        position: relative;
+        bottom: -50px;
+    }
+
+    .estructura-footer {
+        padding-top: 50px;
+    }
+}
