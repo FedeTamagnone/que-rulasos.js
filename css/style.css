@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Quicksand:wght@500;700&display=swap");
+:link {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(212, 180, 160);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  margin-bottom: 100px;
+}
+.menu .menu-1 {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  top: -20px;
+  font-size: 2em;
+  margin-left: -10px;
+  margin-bottom: -80px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.menu .menu-1 .palabra1 {
+  background-color: lightblue;
+  padding: 10px 5px;
+  transition: background-color 0.5s;
+}
+.menu .menu-1 .palabra1:hover {
+  background-color: lightcoral;
+}
+.menu .menu-1 .palabra2 {
+  background-color: lightblue;
+  padding: 10px 5px;
+  transition: background-color 0.5s;
+}
+.menu .menu-1 .palabra2:hover {
+  background-color: lightcoral;
+}
+.menu .menu-1 .palabra3 {
+  background-color: lightblue;
+  padding: 10px 5px;
+  transition: background-color 0.5s;
+}
+.menu .menu-1 .palabra3:hover {
+  background-color: lightcoral;
+}
+.menu .menu-1 .palabra4 {
+  background-color: lightblue;
+  padding: 10px 5px;
+  transition: background-color 0.5s;
+}
+.menu .menu-1 .palabra4:hover {
+  background-color: lightcoral;
+}
+.menu .menu-1 .palabra5 {
+  background-color: lightblue;
+  padding: 10px 5px;
+  transition: background-color 0.5s;
+}
+.menu .menu-1 .palabra5:hover {
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-1 {
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    font-size: small;
+    margin-top: 15px;
+    background-color: lightblue;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+}
+@font-face {
+  font-family: brittany;
+  src: url(../Tipografía/brittany_signature/BrittanySignature.ttf);
+}
+@font-face {
+  font-family: nefelibata;
+  src: url(../Tipografía/Nefelibatas-canva/Nefelibata-Brush.woff);
+}
+@font-face {
+  font-family: amsterdam;
+  src: url(../Tipografía/Amsterdam/Amsterdam\ 400.ttf);
+}
+
+/*# sourceMappingURL=style.css.map */

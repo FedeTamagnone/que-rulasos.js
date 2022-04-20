@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Nefelibata';
+    src: local('Nefelibata Brush Canvas'), local('Nefelibata-Brush-Canvas'),
+        url('Nefelibata-BrushCanvas.woff2') format('woff2'),
+        url('Nefelibata-BrushCanvas.woff') format('woff'),
+        url('Nefelibata-BrushCanvas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

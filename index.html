@@ -5,61 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- --------------------------- link bootstrap ---------------------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <!-- ------------------------------ link css ------------------------------- -->
-        <link rel="stylesheet" href="css/style.css">
 
-    <link rel="icon" href="multimedia/fondo-liso.jpg">
+    <!-- ------------------------------ link css ------------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Que Rulasos</title>
 </head>
 
-<body class="fondo">
+<body>
 
     <!-- Estructura que se repite en todas las paguinas-->
 
     <header>
         <!-- la idea es usar el H1, pero que el texto no se vea, y usar el siguiente logo como titulo de mi paguina-->
 
-        <h1></h1>
-
-        <!-- Acá iría el logo, si puedo hacer que se dibuje en vez de ser una imagen fija -->
-
         <div class="logo">
             <a href="index.html"> <img src="multimedia/logo.png" alt=""> </a>
         </div>
 
-        <!-- acá iría algo como para poner de fondo, detras del logo, y aun no defino si la lista tambien adentro o por debajo -->
-
+        <!-- ------------------------------- Navbar -------------------------------- -->
 
         <nav class="menu">
             <ul class="menu-1">
-                <li class="palabra1"> <a href="Servicios.html"> Servicios </a> </li>
-                <li class="palabra2"> <a href="Productos.html">Productos </a></li>
-                <li class="palabra3"><a href="Rulitips.html"> Rulitips </a></li>
-                <li class="palabra4"><a href="Contacto.html"> Contacto </a></li>
-                <li class="palabra5"><a href="Rulipedia.html"> Rulipedia </a></li>
+                <li class="palabra1"> <a href="html/Servicios.html"> Servicios </a> </li>
+                <li class="palabra2"> <a href="html/Productos.html">Productos </a></li>
+                <li class="palabra3"><a href="html/Rulitips.html"> Rulitips </a></li>
+                <li class="palabra4"><a href="html/Contacto.html"> Contacto </a></li>
+                <li class="palabra5"><a href="html/Rulipedia.html"> Rulipedia </a></li>
             </ul>
         </nav>
 
     </header>
 
-
-
-
-    <!-- ------------------------ Fin de la estructura ------------------------- -->
-
-
-
-
+        <!-- ------------------------ Fin de la navbar ------------------------- -->
 
 
     <header>
 
-        <h2 class="novedades"> <a href="Productos.html"> Novedades </a> </h2>
+        <h2 class="novedades"> <a href="html/Productos.html"> Novedades </a> </h2>
+
+        <!-- ----------------------- carrusel con bootstrap ------------------------ -->
 
         <section class="carrusel-novedades">
             <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
@@ -86,7 +74,7 @@
         </section>
 
 
-        <h2 class="nuestros-trabajos"> <a href="Servicios.html"> Nuestros trabajos</a></h2>
+        <h2 class="nuestros-trabajos"> <a href="html/Servicios.html"> Nuestros trabajos</a></h2>
 
         <img src="multimedia/IMG_20210820_155440.jpg" alt="Foto corte de pelo" class="imagen_nuestros_trabajos">
 
@@ -99,7 +87,7 @@
 
         <!-- logo fijo -->
         <div>
-            <a href="index.html"> <img src="/multimedia/Logo.png" alt="Que rulasos" class="logo-footer"></a>
+            <a href="index.html"> <img src="/multimedia/logo.png" alt="Que rulasos" class="logo-footer"></a>
         </div>
 
         <!------------ lado izquierdo  ----------------->
@@ -107,25 +95,17 @@
         <section class="estructura-footer">
 
 
-
-
-
             <nav>
                 <ul class="nav-footer">
-                    <li> <a href="Servicios.html"> Servicios </a> </li>
-                    <li> <a href="Productos.html">Productos </a></li>
-                    <li><a href="Rulitips.html"> Rulitips </a></li>
-                    <li><a href="Contacto.html"> Contacto </a></li>
-                    <li><a href="Rulipedia.html"> Rulipedia </a></li>
+                    <li> <a href="html/Servicios.html"> Servicios </a> </li>
+                    <li> <a href="html/Productos.html">Productos </a></li>
+                    <li><a href="html/Rulitips.html"> Rulitips </a></li>
+                    <li><a href="html/Contacto.html"> Contacto </a></li>
+                    <li><a href="html/Rulipedia.html"> Rulipedia </a></li>
                 </ul>
             </nav>
 
-
-
             <!----------------- lado derecho -------------->
-
-            <!-- Definir si dejar la palabra "Instagram" y el logo, o solo el logo enlazado -->
-
 
 
             <div class="instagram">
