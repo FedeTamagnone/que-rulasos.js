@@ -1,0 +1,71 @@
+.titulo-rulipedia {
+    color: rgb(88, 71, 67);
+    background-color: #F3E9DD;
+    font-family: brittany;
+    text-align: center;
+    font-size: 800%;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+
+section {
+
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        margin-left: 30px;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .cuadrado {
+        background-color: rgb(238, 216, 189);
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 15px;
+
+        p {
+            font-family: 'Quicksand', sans-serif;
+            text-align: justify;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            li {
+                font-family: 'Quicksand', sans-serif;
+                text-align: justify;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+.isla {
+    margin-left: 20%;
+}
+
+.isla-reves {
+    margin-right: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+    .titulo-rulipedia {
+        color: rgb(88, 71, 67);
+        background-color: #F3E9DD;
+        font-family: brittany;
+        text-align: center;
+        font-size: 400%;
+        margin-bottom: 0px;
+    }
+}
