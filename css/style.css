@@ -120,7 +120,7 @@ header h2 a {
 
 .carrusel-novedades {
   background-color: white;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
@@ -128,8 +128,10 @@ header h2 a {
   margin-left: 20px;
 }
 
-.imagen_nuestros_trabajos {
-  width: 30%;
+.carrusel-trabajos {
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 * {
