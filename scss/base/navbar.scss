@@ -11,11 +11,23 @@
 
 body {
     background-color: rgba(212, 180, 160, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo {
     display: flex;
     justify-content: center;
+
+    a {
+
+        text-align: center;
+
+        img {
+            width: 70%;
+        }
+    }
 }
 
 
@@ -33,76 +45,80 @@ nav {
 
 .menu {
 
-    .menu-1 {
 
-        font-family: 'Quicksand', sans-serif;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        align-items: center;
-        list-style: none;
-        position: relative;
-        top: -20px;
-        font-size: 2em;
-        margin-left: -10px;
-        margin-bottom: -80px;
-        text-align: center;
-        transition-property: all;
-        transition-duration: 1s;
+        .menu-1 {
 
-        .palabra1 {
-            @include palabras(lightblue, 10px 5px, background-color 0.5s);
-            color: black;
+            font-family: 'Quicksand', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            top: -20px;
+            font-size: 2em;
+            margin-left: -10px;
+            margin-bottom: -80px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 1s;
 
-            &:hover {
-                background-color: lightcoral;
+            .palabra1 {
+                @include palabras(lightblue, 10px 5px, background-color 0.5s);
+                color: black;
+
+                &:hover {
+                    background-color: lightcoral;
+                }
+            }
+
+            .palabra2 {
+                @include palabras(lightblue, 10px 5px, background-color 0.5s);
+
+                &:hover {
+                    background-color: lightcoral;
+                }
+            }
+
+            .palabra3 {
+                @include palabras(lightblue, 10px 5px, background-color 0.5s);
+
+                &:hover {
+                    background-color: lightcoral;
+                }
+            }
+
+            .palabra4 {
+                @include palabras(lightblue, 10px 5px, background-color 0.5s);
+
+                &:hover {
+                    background-color: lightcoral;
+                }
+            }
+
+            .palabra5 {
+                @include palabras(lightblue, 10px 5px, background-color 0.5s);
+
+                &:hover {
+                    background-color: lightcoral;
+                }
             }
         }
-
-        .palabra2 {
-            @include palabras(lightblue, 10px 5px, background-color 0.5s);
-
-            &:hover {
-                background-color: lightcoral;
-            }
-        }
-
-        .palabra3 {
-            @include palabras(lightblue, 10px 5px, background-color 0.5s);
-
-            &:hover {
-                background-color: lightcoral;
-            }
-        }
-
-        .palabra4 {
-            @include palabras(lightblue, 10px 5px, background-color 0.5s);
-
-            &:hover {
-                background-color: lightcoral;
-            }
-        }
-
-        .palabra5 {
-            @include palabras(lightblue, 10px 5px, background-color 0.5s);
-
-            &:hover {
-                background-color: lightcoral;
-            }
-        }
-    }
+    
 }
 
 @media screen and (max-width: 1000px) {
 
     .menu {
-        font-family: 'Quicksand', sans-serif;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-content: space-around;
-        font-size: small;
-        margin-top: 15px;
-        background-color: lightblue;
-        transition-property: all;
-        transition-duration: 1s;
+        .menu-1 {
+            font-family: 'Quicksand', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            justify-content: space-around;
+            font-size: small;
+            margin-top: 15px;
+            background-color: lightblue;
+            transition-property: all;
+            transition-duration: 1s;
+        }
     }
 }

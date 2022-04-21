@@ -8,7 +8,8 @@
 .pie-pagina {
 
     width: 100%;
-    margin-top: 40px;
+    margin-top: auto;
+
 
     .grupo-1 {
         width: 100%;
@@ -22,8 +23,10 @@
         .box {
             display: flex;
             justify-content: space-between;
+            margin-bottom: -50px;
 
             nav {
+
                 .nav-footer {
                     font-family: 'Quicksand', sans-serif;
                     list-style: none;
@@ -32,6 +35,7 @@
                     flex-direction: column;
                     align-items: flex-start;
                     padding-top: 150px;
+                    margin-left: -15px;
                 }
             }
 
@@ -60,7 +64,8 @@
 
                 img {
                     width: 50%;
-                    padding-top: 200px;
+                    padding-top: 250px;
+                    padding-right: 17px;
                 }
             }
         }
@@ -87,17 +92,45 @@
 
         .grupo-1 {
             width: 100%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 30px;
-            padding: 35px 0px;
+            padding: 45px 0px;
+            .box {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: -50px;
+                nav {
+                    .nav-footer {
+                        font-family: 'Quicksand', sans-serif;
+                        list-style: none;
+                        font-size: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding-top: 180px;
+                        margin-left: -15px;
+                    }
+                }
+            }
+            .div-logo {
+                display: none;
+            }
+
+            .div-insta {
+                a {
+                    img {
+                    }
+                }
+
+            }
         }
-        .div-logo {
-            display: none;
+
+        .grupo-2 {
+            small {
+                font-size: 10px;
+            }
         }
     }
+
 }
-
-
 
 
 /*

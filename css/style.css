@@ -6,11 +6,20 @@
 
 body {
   background-color: rgb(212, 180, 160);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+}
+.logo a {
+  text-align: center;
+}
+.logo a img {
+  width: 70%;
 }
 
 nav ul li a {
@@ -76,7 +85,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1000px) {
-  .menu {
+  .menu .menu-1 {
     font-family: "Quicksand", sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -126,7 +135,7 @@ header h2 a {
 
 .pie-pagina {
   width: 100%;
-  margin-top: 40px;
+  margin-top: auto;
 }
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -140,6 +149,7 @@ header h2 a {
 .pie-pagina .grupo-1 .box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -50px;
 }
 .pie-pagina .grupo-1 .box nav .nav-footer {
   font-family: "Quicksand", sans-serif;
@@ -149,6 +159,7 @@ header h2 a {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 150px;
+  margin-left: -15px;
 }
 .pie-pagina .grupo-1 .box .div-logo a {
   width: 100%;
@@ -167,7 +178,8 @@ header h2 a {
 }
 .pie-pagina .grupo-1 .box .div-insta img {
   width: 50%;
-  padding-top: 200px;
+  padding-top: 250px;
+  padding-right: 17px;
 }
 .pie-pagina .grupo-2 {
   background-color: #0a1a2a;
@@ -182,12 +194,28 @@ header h2 a {
 @media screen and (max-width: 1000px) {
   .pie-pagina .grupo-1 {
     width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
+    padding: 45px 0px;
   }
-  .pie-pagina .div-logo {
+  .pie-pagina .grupo-1 .box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -50px;
+  }
+  .pie-pagina .grupo-1 .box nav .nav-footer {
+    font-family: "Quicksand", sans-serif;
+    list-style: none;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 180px;
+    margin-left: -15px;
+  }
+  .pie-pagina .grupo-1 .div-logo {
     display: none;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 10px;
   }
 }
 /*
