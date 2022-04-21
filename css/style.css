@@ -115,7 +115,7 @@ header h2 a {
 
 .novedades {
   margin-top: 100px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .carrusel-novedades {
@@ -125,7 +125,7 @@ header h2 a {
 }
 
 .nuestros-trabajos {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .imagen_nuestros_trabajos {
@@ -163,7 +163,7 @@ header h2 a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 150px;
+  padding-top: 175px;
   margin-left: -15px;
 }
 .pie-pagina .grupo-1 .box .div-logo a {
@@ -218,6 +218,9 @@ header h2 a {
   }
   .pie-pagina .grupo-1 .div-logo {
     display: none;
+  }
+  .pie-pagina .grupo-2 {
+    padding: 5px 10px;
   }
   .pie-pagina .grupo-2 small {
     font-size: 10px;
