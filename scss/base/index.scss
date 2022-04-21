@@ -9,6 +9,7 @@ header {
 
 .novedades {
     margin-top: 100px;
+    margin-left: 40px;
 }
 
 .carrusel-novedades {
@@ -17,6 +18,15 @@ header {
     margin-bottom: 40px;
 }
 
+.nuestros-trabajos{
+    margin-left: 40px;
+}
+
 .imagen_nuestros_trabajos {
     width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+
+
 }

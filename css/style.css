@@ -115,12 +115,17 @@ header h2 a {
 
 .novedades {
   margin-top: 100px;
+  margin-left: 40px;
 }
 
 .carrusel-novedades {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.nuestros-trabajos {
+  margin-left: 40px;
 }
 
 .imagen_nuestros_trabajos {
@@ -218,53 +223,5 @@ header h2 a {
     font-size: 10px;
   }
 }
-/*
-.nav-footer {
-    font-family: 'Quicksand', sans-serif;
-    list-style: none;
-    font-size: 1rem;
-    margin-left: 10px;
-    padding-bottom: 10px;
-}
-
-
-.logo-footer {
-    width: 30%;
-    display: flex;
-    margin: auto;
-    padding-top: 100px;
-}
-
-.instagram {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
-}
-
-.instagram img {
-    width: 100px;
-}
-
-
-*/
-/* ---------------------------------- Media --------------------------------- */
-/*
-    @media screen and (max-width: 1000px) {
-        div .logo-footer {
-            display: none;
-        }
-
-        .instagram img {
-            width: 50px;
-            position: relative;
-            bottom: -50px;
-        }
-
-        .estructura-footer {
-            padding-top: 50px;
-        }
-    }
-
-    */
 
 /*# sourceMappingURL=style.css.map */
