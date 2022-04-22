@@ -145,18 +145,19 @@ header h2 a {
   margin-top: auto;
 }
 .pie-pagina .grupo-1 {
-  width: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -50px;
+}
+.pie-pagina .grupo-1 .box nav {
+  display: flex;
+  align-items: flex-end;
 }
 .pie-pagina .grupo-1 .box nav .nav-footer {
   font-family: "Quicksand", sans-serif;
@@ -165,28 +166,36 @@ header h2 a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 175px;
   margin-left: -15px;
 }
 .pie-pagina .grupo-1 .box .div-logo a {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
 }
 .pie-pagina .grupo-1 .box .div-logo img {
   width: 75%;
+}
+.pie-pagina .grupo-1 .box .div-insta {
+  display: flex;
+  align-items: flex-end;
 }
 .pie-pagina .grupo-1 .box .div-insta a {
   display: flex;
   justify-content: flex-end;
 }
 .pie-pagina .grupo-1 .box .div-insta img {
-  width: 50%;
-  padding-top: 250px;
-  padding-right: 17px;
+  width: 6rem;
+}
+.pie-pagina .grupo-1 .box1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.pie-pagina .grupo-1 .box2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 .pie-pagina .grupo-2 {
   background-color: #0a1a2a;
@@ -199,15 +208,6 @@ header h2 a {
 }
 
 @media screen and (max-width: 1000px) {
-  .pie-pagina .grupo-1 {
-    width: 100%;
-    padding: 45px 0px;
-  }
-  .pie-pagina .grupo-1 .box {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -50px;
-  }
   .pie-pagina .grupo-1 .box nav .nav-footer {
     font-family: "Quicksand", sans-serif;
     list-style: none;
@@ -215,8 +215,6 @@ header h2 a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 180px;
-    margin-left: -15px;
   }
   .pie-pagina .grupo-1 .div-logo {
     display: none;
