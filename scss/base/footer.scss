@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@mixin display ($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
 
 .pie-pagina {
 
@@ -21,12 +25,12 @@
         grid-gap: 50px;
 
         .box {
-            display: flex;
-            justify-content: space-between;
+            @include display(flex, space-between);
 
             nav {
                 display: flex;
                 align-items: flex-end;
+                margin-bottom: 10px;
 
                 .nav-footer {
                     font-family: 'Quicksand', sans-serif;
@@ -35,7 +39,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    margin-left: -15px;
+                    margin-left: 10px;
                 }
             }
 
@@ -45,11 +49,12 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding-bottom: 140px
+                    padding-bottom: 90px
                 }
 
                 img {
-                    width: 75%;
+                    width: 100%;
+                    opacity: 75%;
                 }
             }
 
@@ -58,8 +63,7 @@
                 align-items: flex-end;
 
                 a {
-                    display: flex;
-                    justify-content: flex-end;
+                    @include display(flex, flex-end);
                 }
 
                 img {
@@ -69,12 +73,11 @@
         }
 
         .box1 {
-            display: flex;
-            justify-content: flex-start;
+            @include display(flex, flex-start);
         }
+
         .box2 {
-            display: flex;
-            justify-content: flex-end;
+            @include display(flex, flex-end);
             margin-right: 10px;
         }
     }
@@ -113,9 +116,13 @@
             }
 
             .div-logo {
-                display: none;
-            }
+                a {
+                    opacity: 80%;
+                    img {
+                    }
+                }
 
+            }
 
         }
 
