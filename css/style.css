@@ -282,13 +282,26 @@ section .cuadrado p li {
 
 .titulo-contacto {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .whats-app {
+  margin-top: -20px;
   display: flex;
+  align-content: center;
+}
+.whats-app h3 {
+  text-align: center;
+}
+.whats-app a {
+  margin-top: 25px;
 }
 .whats-app a img {
   width: 50px;
+}
+
+.mapa {
+  padding: 20px;
 }
 
 :link {

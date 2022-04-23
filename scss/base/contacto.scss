@@ -1,17 +1,27 @@
-.cuerpo-contacto{
+.cuerpo-contacto {
     padding-top: 100px;
 }
 
-.titulo-contacto{
+.titulo-contacto {
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
-.whats-app{
-    display: flex;
-    
-    a{
-        img{
+.whats-app {
+margin-top: -20px;
+display: flex;
+align-content: center;
+h3{
+text-align: center;
+}
+    a {
+        margin-top: 25px;
+        img {
             width: 50px;
         }
     }
+}
+
+.mapa{
+    padding: 20px;
 }
