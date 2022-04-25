@@ -8,20 +8,30 @@
 }
 
 .whats-app {
-margin-top: -20px;
-display: flex;
-align-content: center;
-h3{
-text-align: center;
-}
+    margin-top: -20px;
+    display: flex;
+    align-content: center;
+
+    h3 {
+        text-align: center;
+    }
+
     a {
         margin-top: 25px;
+
         img {
             width: 50px;
         }
     }
 }
 
-.mapa{
+.mapa {
     padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    h2 {
+        font-size: 100%;
+    }
 }

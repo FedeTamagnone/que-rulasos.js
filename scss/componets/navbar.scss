@@ -1,13 +1,10 @@
 
-
 .logo {
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
-
     a {
         text-align: center;
-
         img {
             width: 70%;
         }
@@ -20,8 +17,6 @@ nav {
         li {
             a {
                 color: black;
-                text-decoration: none;
-                list-style-type: none;
             }
         }
     }
@@ -38,7 +33,7 @@ nav {
             position: relative;
             top: -20px;
             font-size: 2em;
-            margin-left: -10px;
+
             margin-bottom: -80px;
             text-align: center;
             transition-property: all;
@@ -47,7 +42,6 @@ nav {
             .palabra1 {
                 @include palabras(lightblue, 10px 5px, background-color 0.5s);
                 color: black;
-
                 &:hover {
                     background-color: lightcoral;
                 }
