@@ -1,5 +1,5 @@
 .titulo-rulipedia {
-    color: rgb(88, 71, 67);
+    color: $color-titulos;
     background-color: #F3E9DD;
     font-family: brittany;
     text-align: center;
@@ -60,10 +60,6 @@ section {
 
 @media screen and (max-width: 1000px) {
     .titulo-rulipedia {
-        color: rgb(88, 71, 67);
-        background-color: #F3E9DD;
-        font-family: brittany;
-        text-align: center;
         font-size: 400%;
         padding-top: 30px;
         margin-bottom: 0px;

@@ -1,9 +1,4 @@
-@mixin palabras ($fondo, $padding, $transition) {
-    background-color: $fondo;
-    padding: $padding;
-    transition: $transition;
 
-}
 
 .logo {
     display: flex;
@@ -26,6 +21,7 @@ nav {
             a {
                 color: black;
                 text-decoration: none;
+                list-style-type: none;
             }
         }
     }

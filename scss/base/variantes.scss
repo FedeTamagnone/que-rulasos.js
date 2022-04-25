@@ -1,0 +1,12 @@
+@mixin display ($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin palabras ($fondo, $padding, $transition) {
+    background-color: $fondo;
+    padding: $padding;
+    transition: $transition;
+}
+
+$color-titulos: rgb(88, 71, 67);

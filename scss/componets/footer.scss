@@ -1,9 +1,10 @@
 
-
+/*
 @mixin display ($display, $justify) {
     display: $display;
     justify-content: $justify;
 }
+*/
 
 .pie-pagina {
 
@@ -114,8 +115,6 @@
             .div-logo {
                 a {
                     opacity: 80%;
-                    img {
-                    }
                 }
 
             }
