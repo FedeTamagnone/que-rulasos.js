@@ -137,6 +137,7 @@ header h2 a {
   align-items: center;
 }
 .cuadro-intro .intro {
+  padding: 10px;
   text-align: center;
   margin-left: 50px;
   background-color: #F3E9DD;
@@ -193,7 +194,7 @@ header h2 a {
   padding-top: 100px;
   background-image: url(/multimedia/mancha-blanca.png);
   background-repeat: no-repeat;
-  background-position: -480px 0px;
+  background-position: -380px 0px;
 }
 .pie-pagina .grupo-1 {
   max-width: 1200px;
