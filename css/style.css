@@ -124,8 +124,26 @@ nav ul li a {
     transition-duration: 1s;
   }
 }
+header {
+  padding-top: 100px;
+}
 header h2 a {
   color: black;
+}
+
+.cuadro-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.cuadro-intro .intro {
+  text-align: center;
+  margin-left: 50px;
+  background-color: #F3E9DD;
+  border-radius: 20px;
+}
+.cuadro-intro .intro-foto {
+  width: 100%;
 }
 
 .novedades {

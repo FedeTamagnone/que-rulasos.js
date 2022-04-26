@@ -1,9 +1,27 @@
 header {
+    padding-top: 100px;
+
     h2 {
         a {
             color: black;
         }
     }
+}
+
+.cuadro-intro {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+    .intro {
+        text-align: center;
+        margin-left: 50px;
+        background-color: #F3E9DD;
+        border-radius: 20px;
+    }
+.intro-foto{
+    width: 100%;
+}
+
 }
 
 
@@ -21,9 +39,10 @@ header {
     border-radius: 20px;
 }
 
-.carousel-inner{
+.carousel-inner {
     border-radius: 20px;
 }
+
 .nuestros-trabajos {
     margin-left: 20px;
 }
@@ -36,11 +55,10 @@ header {
     margin-right: 20px;
     border-radius: 20px;
 }
-.carouselCrossfade{
-    
+
+.carouselCrossfade {
+
     border-radius: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-    
-}
+@media screen and (max-width: 1000px) {}
