@@ -27,16 +27,37 @@ h2 {
 
 }
 
+
+.preguntas {
+    padding-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+    .mucho-frizz {
+        width: 70%;
+    }
+
+    .pelo-seco {
+        width: 70%;
+    }
+
+    .puntas {
+        width: 70%;
+    }
+}
+
 .cuerpo {
     padding-top: 100px;
 }
 
 .novedades {
-
     margin-left: 20px;
 }
 
 .carrusel-novedades {
+
     background-color: white;
     margin-top: 10px;
     margin-bottom: 40px;
@@ -88,8 +109,9 @@ h2 {
 
         }
     }
-    .cuerpo{
-        margin-top: 240px;
+
+    .preguntas {
+        padding-top: 400px;
     }
 }
 
@@ -99,12 +121,17 @@ h2 {
         .intro-foto {
             position: absolute;
             top: 465px;
+        }
 
+        .cuerpo{
+            padding-top: 20px;
         }
     }
-    .cuerpo{
-        margin-top: 180px;
+
+    .preguntas {
+        padding-top: 400px;
     }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -117,7 +144,12 @@ h2 {
 
         }
     }
-    .cuerpo{
-        margin-top: 30px;
+
+    .preguntas {
+        padding-top: 240px;
+    }
+
+    .cuerpo {
+        margin-top: 0px;
     }
 }
