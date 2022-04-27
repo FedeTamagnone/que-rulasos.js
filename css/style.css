@@ -143,7 +143,9 @@ h2 a {
   border-radius: 20px;
 }
 .cuadro-intro .intro-foto {
+  float: right;
   width: 100%;
+  opacity: 70%;
 }
 
 .cuerpo {
@@ -199,7 +201,7 @@ h2 a {
     top: 420px;
     right: 1px;
     width: 50%;
-    opacity: 80%;
+    z-index: -1;
   }
 
   .cuerpo {
@@ -210,7 +212,6 @@ h2 a {
   .cuadro-intro .intro-foto {
     position: absolute;
     top: 465px;
-    right: 1px;
   }
 
   .cuerpo {
@@ -219,9 +220,9 @@ h2 a {
 }
 @media screen and (max-width: 500px) {
   .cuadro-intro .intro-foto {
+    width: 70%;
     position: absolute;
-    top: 465px;
-    right: 1px;
+    top: 400px;
   }
 
   .cuerpo {

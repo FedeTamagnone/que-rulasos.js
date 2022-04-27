@@ -20,7 +20,9 @@ h2 {
     }
 
     .intro-foto {
+        float: right;
         width: 100%;
+        opacity: 70%;
     }
 
 }
@@ -82,7 +84,7 @@ h2 {
             top: 420px;
             right: 1px;
             width: 50%;
-            opacity: 80%;
+            z-index: -1;
 
         }
     }
@@ -97,7 +99,7 @@ h2 {
         .intro-foto {
             position: absolute;
             top: 465px;
-            right: 1px;
+
         }
     }
     .cuerpo{
@@ -109,9 +111,10 @@ h2 {
 
     .cuadro-intro {
         .intro-foto {
+            width: 70%;
             position: absolute;
-            top: 465px;
-            right: 1px;
+            top: 400px;
+
         }
     }
     .cuerpo{
