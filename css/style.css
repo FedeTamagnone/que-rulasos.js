@@ -56,6 +56,7 @@ nav ul li a {
 }
 
 .menu .menu-1 {
+  padding: 0px;
   font-family: "Quicksand", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -124,10 +125,7 @@ nav ul li a {
     transition-duration: 1s;
   }
 }
-header {
-  padding-top: 100px;
-}
-header h2 a {
+h2 a {
   color: black;
 }
 
@@ -135,6 +133,7 @@ header h2 a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding-top: 75px;
 }
 .cuadro-intro .intro {
   padding: 10px;
@@ -147,8 +146,11 @@ header h2 a {
   width: 100%;
 }
 
+.cuerpo {
+  padding-top: 100px;
+}
+
 .novedades {
-  margin-top: 100px;
   margin-left: 20px;
 }
 
@@ -182,6 +184,50 @@ header h2 a {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .cuadro-intro {
+    display: inline;
+  }
+  .cuadro-intro .intro {
+    position: relative;
+    top: 100px;
+    margin: 0 15px;
+    font-size: 150%;
+  }
+  .cuadro-intro .intro-foto {
+    position: absolute;
+    top: 420px;
+    right: 1px;
+    width: 50%;
+    opacity: 80%;
+  }
+
+  .cuerpo {
+    margin-top: 240px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .cuadro-intro .intro-foto {
+    position: absolute;
+    top: 465px;
+    right: 1px;
+  }
+
+  .cuerpo {
+    margin-top: 180px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cuadro-intro .intro-foto {
+    position: absolute;
+    top: 465px;
+    right: 1px;
+  }
+
+  .cuerpo {
+    margin-top: 30px;
+  }
+}
 /*
 @mixin display ($display, $justify) {
     display: $display;
