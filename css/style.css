@@ -136,6 +136,7 @@ h2 a {
   color: black;
 }
 
+/* ------------------------------ intro + foto ------------------------------ */
 .cuadro-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -155,6 +156,7 @@ h2 a {
   opacity: 70%;
 }
 
+/* ------------------------- imagenes link rulitips ------------------------- */
 .preguntas {
   padding-top: 30px;
   display: grid;
@@ -170,6 +172,69 @@ h2 a {
 }
 .preguntas .puntas {
   width: 70%;
+}
+
+/* ------------------------------- Marcas logo ------------------------------ */
+.logos-productos .productos-index {
+  margin-top: 80px;
+  background-color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+.logos-productos .grupo-logos .primerlogo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: ". a . b  . c .";
+}
+.logos-productos .grupo-logos .primerlogo .logo1 {
+  grid-area: a;
+  width: 80%;
+}
+.logos-productos .grupo-logos .primerlogo .logo2 {
+  grid-area: b;
+  width: 80%;
+}
+.logos-productos .grupo-logos .primerlogo .logo3 {
+  grid-area: c;
+  width: 80%;
+}
+.logos-productos .grupo-logos .segundologo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: "d . e . f . g";
+}
+.logos-productos .grupo-logos .segundologo .logo4 {
+  grid-area: d;
+  width: 80%;
+}
+.logos-productos .grupo-logos .segundologo .logo5 {
+  grid-area: e;
+  width: 80%;
+}
+.logos-productos .grupo-logos .segundologo .logo6 {
+  grid-area: f;
+  width: 80%;
+}
+.logos-productos .grupo-logos .segundologo .logo7 {
+  grid-area: g;
+  width: 80%;
+}
+.logos-productos .grupo-logos .tercerlogo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: ". a . b  . c .";
+}
+.logos-productos .grupo-logos .tercerlogo .logo8 {
+  grid-area: a;
+  width: 80%;
+}
+.logos-productos .grupo-logos .tercerlogo .logo9 {
+  grid-area: b;
+  width: 80%;
+}
+.logos-productos .grupo-logos .tercerlogo .logo10 {
+  grid-area: c;
+  width: 80%;
 }
 
 .cuerpo {
@@ -272,7 +337,7 @@ h2 a {
   padding-top: 100px;
   background-image: url(/mancha-blanca.png);
   background-repeat: no-repeat;
-  background-position: -380px 0px;
+  background-position: -240px 0px;
 }
 .pie-pagina .grupo-1 {
   max-width: 1200px;

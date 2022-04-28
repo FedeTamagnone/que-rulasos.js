@@ -4,7 +4,7 @@ h2 {
     }
 }
 
-
+/* ------------------------------ intro + foto ------------------------------ */
 .cuadro-intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +27,7 @@ h2 {
 
 }
 
-
+/* ------------------------- imagenes link rulitips ------------------------- */
 .preguntas {
     padding-top: 30px;
     display: grid;
@@ -47,6 +47,93 @@ h2 {
         width: 70%;
     }
 }
+
+/* ------------------------------- Marcas logo ------------------------------ */
+
+.logos-productos {
+
+    .productos-index {
+        margin-top: 80px;
+        background-color: white;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .grupo-logos {
+
+        .primerlogo {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+                ". a . b  . c .";
+
+            .logo1 {
+                grid-area: a;
+                width: 80%;
+            }
+
+            .logo2 {
+                grid-area: b;
+                width: 80%;
+            }
+
+            .logo3 {
+                grid-area: c;
+                width: 80%;
+            }
+        }
+
+        .segundologo {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+                "d . e . f . g";
+
+            .logo4 {
+                grid-area: d;
+                width: 80%;
+            }
+
+            .logo5 {
+                grid-area: e;
+                width: 80%;
+            }
+
+            .logo6 {
+                grid-area: f;
+                width: 80%;
+            }
+
+            .logo7 {
+                grid-area: g;
+                width: 80%;
+            }
+        }
+
+        .tercerlogo {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+                ". a . b  . c .";
+
+            .logo8 {
+                grid-area: a;
+                width: 80%;
+            }
+
+            .logo9 {
+                grid-area: b;
+                width: 80%;
+            }
+
+            .logo10 {
+                grid-area: c;
+                width: 80%;
+            }
+        }
+    }
+}
+
 
 .cuerpo {
     padding-top: 100px;
@@ -123,7 +210,7 @@ h2 {
             top: 465px;
         }
 
-        .cuerpo{
+        .cuerpo {
             padding-top: 20px;
         }
     }
