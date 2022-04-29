@@ -60,9 +60,11 @@ h2 {
     }
 
     .grupo-logos {
+        margin-top: 20px;
 
         .primerlogo {
             display: grid;
+            justify-items: center;
             grid-template-columns: repeat(7, 1fr);
             grid-template-areas:
                 ". a . b  . c .";
@@ -85,6 +87,7 @@ h2 {
 
         .segundologo {
             display: grid;
+            justify-items: center;
             grid-template-columns: repeat(7, 1fr);
             grid-template-areas:
                 "d . e . f . g";
@@ -112,6 +115,7 @@ h2 {
 
         .tercerlogo {
             display: grid;
+            justify-items: center;
             grid-template-columns: repeat(7, 1fr);
             grid-template-areas:
                 ". a . b  . c .";

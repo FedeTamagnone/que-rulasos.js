@@ -181,8 +181,12 @@ h2 a {
   text-align: center;
   font-weight: bolder;
 }
+.logos-productos .grupo-logos {
+  margin-top: 20px;
+}
 .logos-productos .grupo-logos .primerlogo {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(7, 1fr);
   grid-template-areas: ". a . b  . c .";
 }
@@ -200,6 +204,7 @@ h2 a {
 }
 .logos-productos .grupo-logos .segundologo {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(7, 1fr);
   grid-template-areas: "d . e . f . g";
 }
@@ -221,6 +226,7 @@ h2 a {
 }
 .logos-productos .grupo-logos .tercerlogo {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(7, 1fr);
   grid-template-areas: ". a . b  . c .";
 }
@@ -325,12 +331,6 @@ h2 a {
     margin-top: 0px;
   }
 }
-/*
-@mixin display ($display, $justify) {
-    display: $display;
-    justify-content: $justify;
-}
-*/
 .pie-pagina {
   width: 100%;
   margin-top: auto;
@@ -361,7 +361,8 @@ h2 a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: -18px;
+  padding: 0;
+  margin-left: 10px;
 }
 .pie-pagina .grupo-1 .box .div-logo a {
   display: flex;
@@ -508,6 +509,25 @@ section .cuadrado p li {
 @media screen and (max-width: 1000px) {
   h2 {
     font-size: 100%;
+  }
+}
+.titulo-nuestros {
+  color: rgb(88, 71, 67);
+  background-color: #F3E9DD;
+  font-family: brittany;
+  text-align: center;
+  font-size: 800%;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .titulo-nuestros {
+    font-size: 200%;
+    padding-top: 30px;
+    margin-bottom: 0px;
   }
 }
 

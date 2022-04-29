@@ -1,0 +1,20 @@
+.titulo-nuestros{
+    color: $color-titulos;
+    background-color: #F3E9DD;
+    font-family: brittany;
+    text-align: center;
+    font-size: 800%;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .titulo-nuestros {
+        font-size: 200%;
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+}
