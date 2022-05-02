@@ -332,8 +332,12 @@ h2 a {
     top: 400px;
   }
 
+  .logos-productos .productos-index {
+    margin-top: 30px;
+  }
+
   .preguntas {
-    padding-top: 260px;
+    padding-top: 280px;
   }
 
   .cuerpo {
@@ -485,6 +489,7 @@ section .cuadrado p li {
     font-size: 400%;
     padding-top: 30px;
     margin-bottom: 0px;
+    padding-bottom: 10px;
   }
 }
 .cuerpo-contacto {
@@ -532,7 +537,7 @@ section .cuadrado p li {
   margin-top: 40px;
 }
 
-.bekim {
+#bekim {
   font-family: "Quicksand", sans-serif;
   font-size: 300%;
   background-color: rgb(255, 255, 255);
@@ -669,7 +674,7 @@ section .contenedor .d11 {
     margin-bottom: 0px;
   }
 
-  .bekim {
+  #bekim {
     font-size: 150%;
   }
 
