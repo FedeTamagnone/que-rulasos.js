@@ -10,3 +10,8 @@
 }
 
 $color-titulos: rgb(88, 71, 67);
+
+@mixin area ($area, $width){
+    grid-area: $area;
+    width: $width;
+}

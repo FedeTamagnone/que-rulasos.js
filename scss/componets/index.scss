@@ -37,14 +37,17 @@ h2 {
 
     .mucho-frizz {
         width: 70%;
+        text-align: center;
     }
 
     .pelo-seco {
         width: 70%;
+        text-align: center;
     }
 
     .puntas {
         width: 70%;
+        text-align: center;
     }
 }
 
@@ -61,6 +64,7 @@ h2 {
 
     .grupo-logos {
         margin-top: 20px;
+        text-align: center;
 
         .primerlogo {
             display: grid;
@@ -71,17 +75,17 @@ h2 {
 
             .logo1 {
                 grid-area: a;
-                width: 80%;
+                width: 100%;
             }
 
             .logo2 {
                 grid-area: b;
-                width: 80%;
+                width: 100%;
             }
 
             .logo3 {
                 grid-area: c;
-                width: 80%;
+                width: 100%;
             }
         }
 
@@ -94,45 +98,46 @@ h2 {
 
             .logo4 {
                 grid-area: d;
-                width: 80%;
+                width: 100%;
             }
 
             .logo5 {
                 grid-area: e;
-                width: 80%;
+                width: 100%;
             }
 
             .logo6 {
                 grid-area: f;
-                width: 80%;
+                width: 100%;
             }
 
             .logo7 {
                 grid-area: g;
-                width: 80%;
+                width: 100%;
             }
         }
 
         .tercerlogo {
             display: grid;
             justify-items: center;
+            align-items: center;
             grid-template-columns: repeat(7, 1fr);
             grid-template-areas:
                 ". a . b  . c .";
 
             .logo8 {
                 grid-area: a;
-                width: 80%;
+                width: 100%;
             }
 
             .logo9 {
                 grid-area: b;
-                width: 80%;
+                width: 100%;
             }
 
             .logo10 {
                 grid-area: c;
-                width: 80%;
+                width: 100%;
             }
         }
     }

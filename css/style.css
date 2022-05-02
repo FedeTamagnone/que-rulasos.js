@@ -48,7 +48,7 @@ p {
   text-align: center;
 }
 .logo a img {
-  width: 70%;
+  width: 100%;
 }
 
 nav ul li a {
@@ -71,45 +71,45 @@ nav ul li a {
   transition-duration: 1s;
 }
 .menu .menu-1 .palabra1 {
-  background-color: lightblue;
+  background-color: rgba(146, 107, 67, 0.937254902);
   padding: 10px 5px;
   transition: background-color 0.5s;
   color: black;
 }
 .menu .menu-1 .palabra1:hover {
-  background-color: lightcoral;
+  background-color: rgb(51, 92, 43);
 }
 .menu .menu-1 .palabra2 {
-  background-color: lightblue;
+  background-color: rgba(146, 107, 67, 0.937254902);
   padding: 10px 5px;
   transition: background-color 0.5s;
 }
 .menu .menu-1 .palabra2:hover {
-  background-color: lightcoral;
+  background-color: rgb(51, 92, 43);
 }
 .menu .menu-1 .palabra3 {
-  background-color: lightblue;
+  background-color: rgba(146, 107, 67, 0.937254902);
   padding: 10px 5px;
   transition: background-color 0.5s;
 }
 .menu .menu-1 .palabra3:hover {
-  background-color: lightcoral;
+  background-color: rgb(51, 92, 43);
 }
 .menu .menu-1 .palabra4 {
-  background-color: lightblue;
+  background-color: rgba(146, 107, 67, 0.937254902);
   padding: 10px 5px;
   transition: background-color 0.5s;
 }
 .menu .menu-1 .palabra4:hover {
-  background-color: lightcoral;
+  background-color: rgb(51, 92, 43);
 }
 .menu .menu-1 .palabra5 {
-  background-color: lightblue;
+  background-color: rgba(146, 107, 67, 0.937254902);
   padding: 10px 5px;
   transition: background-color 0.5s;
 }
 .menu .menu-1 .palabra5:hover {
-  background-color: lightcoral;
+  background-color: rgb(51, 92, 43);
 }
 
 @media screen and (max-width: 1000px) {
@@ -118,6 +118,10 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 850px) {
+  .logo a img {
+    width: 60%;
+  }
+
   .menu .menu-1 {
     font-size: 1.5rem;
   }
@@ -166,12 +170,15 @@ h2 a {
 }
 .preguntas .mucho-frizz {
   width: 70%;
+  text-align: center;
 }
 .preguntas .pelo-seco {
   width: 70%;
+  text-align: center;
 }
 .preguntas .puntas {
   width: 70%;
+  text-align: center;
 }
 
 /* ------------------------------- Marcas logo ------------------------------ */
@@ -183,6 +190,7 @@ h2 a {
 }
 .logos-productos .grupo-logos {
   margin-top: 20px;
+  text-align: center;
 }
 .logos-productos .grupo-logos .primerlogo {
   display: grid;
@@ -192,15 +200,15 @@ h2 a {
 }
 .logos-productos .grupo-logos .primerlogo .logo1 {
   grid-area: a;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .primerlogo .logo2 {
   grid-area: b;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .primerlogo .logo3 {
   grid-area: c;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .segundologo {
   display: grid;
@@ -210,37 +218,38 @@ h2 a {
 }
 .logos-productos .grupo-logos .segundologo .logo4 {
   grid-area: d;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .segundologo .logo5 {
   grid-area: e;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .segundologo .logo6 {
   grid-area: f;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .segundologo .logo7 {
   grid-area: g;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .tercerlogo {
   display: grid;
   justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(7, 1fr);
   grid-template-areas: ". a . b  . c .";
 }
 .logos-productos .grupo-logos .tercerlogo .logo8 {
   grid-area: a;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .tercerlogo .logo9 {
   grid-area: b;
-  width: 80%;
+  width: 100%;
 }
 .logos-productos .grupo-logos .tercerlogo .logo10 {
   grid-area: c;
-  width: 80%;
+  width: 100%;
 }
 
 .cuerpo {
@@ -655,7 +664,7 @@ section .contenedor .d11 {
 
 @media screen and (max-width: 1000px) {
   .titulo-nuestros {
-    font-size: 300%;
+    font-size: 200%;
     padding-top: 30px;
     margin-bottom: 0px;
   }
@@ -670,7 +679,7 @@ section .contenedor .d11 {
   }
   section .contenedor p {
     font-weight: bolder;
-    font-size: 100%;
+    font-size: 75%;
   }
 }
 
