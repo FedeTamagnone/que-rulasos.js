@@ -273,6 +273,10 @@ h2 a {
   border-radius: 20px;
 }
 
+.novedades-fotos {
+  border-radius: 20px;
+}
+
 .nuestros-trabajos {
   margin-left: 20px;
 }
@@ -438,7 +442,7 @@ h2 a {
   font-family: brittany;
   text-align: center;
   font-size: 800%;
-  padding-top: 20px;
+  padding: 35px 0;
   letter-spacing: 2px;
   margin-bottom: 60px;
   margin-top: 40px;
@@ -531,10 +535,9 @@ section .cuadrado p li {
   font-family: brittany;
   text-align: center;
   font-size: 800%;
-  padding-top: 20px;
+  padding: 35px 0;
   letter-spacing: 2px;
-  margin-bottom: 60px;
-  margin-top: 40px;
+  margin: 40px 0 60px 0;
 }
 
 #bekim {
