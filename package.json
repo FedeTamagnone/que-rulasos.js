@@ -6,6 +6,7 @@
   "name": "que-rulasos-sass",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "Proyecto final Desarrollo Wer - Coderhouse",
   "dependencies": {
     "abbrev": "^1.1.1",
     "agent-base": "^6.0.2",

@@ -25,7 +25,6 @@ nav {
 
 
 .menu {
-
     .menu-1 {
         padding: 0px;
         font-family: 'Quicksand', sans-serif;
@@ -40,7 +39,6 @@ nav {
         text-align: center;
         transition-property: all;
         transition-duration: 1s;
-
         .palabra1 {
             @include palabras(#926b43ef, 10px 5px, background-color 0.5s);
             color: black;

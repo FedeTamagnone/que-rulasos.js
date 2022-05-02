@@ -27,29 +27,7 @@ h2 {
 
 }
 
-/* ------------------------- imagenes link rulitips ------------------------- */
-.preguntas {
-    padding-top: 30px;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
 
-    .mucho-frizz {
-        width: 70%;
-        text-align: center;
-    }
-
-    .pelo-seco {
-        width: 70%;
-        text-align: center;
-    }
-
-    .puntas {
-        width: 70%;
-        text-align: center;
-    }
-}
 
 /* ------------------------------- Marcas logo ------------------------------ */
 
@@ -143,6 +121,63 @@ h2 {
     }
 }
 
+.texto-objetivo {
+    padding-top: 140px;
+    margin-left: 20px;
+
+    .objetivo {
+        color: #3d3934;
+        text-align: left;
+        font-weight: bolder;
+        font-size: 230%;
+    }
+}
+
+
+.nuestro-planeta {
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    .planeta {
+        font-size: 300%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .mundo {
+        width: 50%;
+    }
+}
+
+/* ------------------------- imagenes link rulitips ------------------------- */
+.preguntas {
+    padding: 70px 0;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+    .mucho-frizz {
+        width: 70%;
+        text-align: center;
+    }
+
+    .pelo-seco {
+        width: 70%;
+        text-align: center;
+    }
+
+    .puntas {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+
 
 .cuerpo {
     padding-top: 100px;
@@ -165,7 +200,7 @@ h2 {
     border-radius: 20px;
 }
 
-.novedades-fotos{
+.novedades-fotos {
     border-radius: 20px;
 }
 
@@ -175,10 +210,7 @@ h2 {
 
 .carrusel-trabajos {
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 10px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 40px 20px 20px;
     border-radius: 20px;
 }
 
@@ -194,23 +226,31 @@ h2 {
 
         .intro {
             position: relative;
-            top: 100px;
+            top: 150px;
             margin: 0 15px;
-            font-size: 150%;
+            font-size: 175%;
         }
 
         .intro-foto {
             position: absolute;
-            top: 420px;
+            top: 500px;
             right: 1px;
-            width: 50%;
+            width: 60%;
             z-index: -1;
-
         }
     }
 
-    .preguntas {
-        padding-top: 400px;
+    .texto-objetivo {
+        padding-top: 380px;
+        .objetivo {
+            font-size: 180%;
+        }
+    }
+
+    .nuestro-planeta {
+        .planeta {
+            font-size: 175%;
+        }
     }
 }
 
@@ -219,18 +259,27 @@ h2 {
     .cuadro-intro {
         .intro-foto {
             position: absolute;
-            top: 465px;
-        }
-
-        .cuerpo {
-            padding-top: 20px;
+            top: 300px;
         }
     }
 
-    .preguntas {
-        padding-top: 400px;
+        .texto-objetivo {
+            padding-top: 380px;
+            .objetivo {
+                font-size: 150%;
+            }
+        }
+
+    .nuestro-planeta {
+        padding: 100px 0;
+        .planeta {
+            font-size: 175%;
+        }
     }
 
+    .cuerpo {
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -239,21 +288,26 @@ h2 {
         .intro-foto {
             width: 70%;
             position: absolute;
-            top: 400px;
-
+            top: 320px;
         }
     }
-
-    .logos-productos {
-        .productos-index {
-            margin-top: 30px;
+    .texto-objetivo {
+        padding-top: 240px;
+        .objetivo {
+            font-size: 84%;
+        }
+    }
+    .nuestro-planeta {
+        padding: 50px 0;
+        .planeta {
+            margin-left: 20px;
+            font-size: 100%;
         }
     }
 
     .preguntas {
-        padding-top: 300px;
+        padding: 10px 0 0 0;
     }
-
     .cuerpo {
         margin-top: 0px;
     }
