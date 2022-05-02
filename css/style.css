@@ -337,7 +337,7 @@ h2 a {
   }
 
   .preguntas {
-    padding-top: 280px;
+    padding-top: 300px;
   }
 
   .cuerpo {
@@ -349,12 +349,11 @@ h2 a {
   margin-top: auto;
   padding-top: 100px;
   background-image: url(/mancha-blanca.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: -240px 0px;
+  background-position: -169px -15px;
 }
 .pie-pagina .grupo-1 {
-  max-width: 1200px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
@@ -366,6 +365,7 @@ h2 a {
 .pie-pagina .grupo-1 .box nav {
   display: flex;
   align-items: flex-end;
+  margin: 10px;
 }
 .pie-pagina .grupo-1 .box nav .nav-footer {
   font-family: "Quicksand", sans-serif;
@@ -381,7 +381,7 @@ h2 a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 90px;
+  margin-bottom: 85px;
 }
 .pie-pagina .grupo-1 .box .div-logo img {
   width: 100%;
@@ -669,7 +669,9 @@ section .contenedor .d11 {
 
 @media screen and (max-width: 1000px) {
   .titulo-nuestros {
-    font-size: 200%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 240%;
     padding-top: 30px;
     margin-bottom: 0px;
   }

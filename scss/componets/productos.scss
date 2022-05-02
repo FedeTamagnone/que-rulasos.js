@@ -194,7 +194,9 @@ section {
 @media screen and (max-width: 1000px) {
 
     .titulo-nuestros {
-        font-size: 200%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 240%;
         padding-top: 30px;
         margin-bottom: 0px;
     }
