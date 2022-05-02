@@ -523,11 +523,154 @@ section .cuadrado p li {
   margin-top: 40px;
 }
 
+.bekim {
+  font-family: "Quicksand", sans-serif;
+  font-size: 300%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+section .contenedor {
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "i1 i2 i3 i4" "t1 t2 t3 t4" "d1 d2 d3 d4" "i5 i6 i7 i8" "t5 t6 t7 t8" "d5 d6 d7 d8" "i9 i10 i11 ." "t9 t10 t11 ." "d9 d10 d11 .";
+  margin: 20px;
+  padding: 0 10px 10px;
+  text-align: center;
+}
+section .contenedor img {
+  width: 100%;
+  margin-top: 30px;
+}
+section .contenedor p {
+  font-weight: bolder;
+  font-size: 150%;
+}
+section .contenedor .img1 {
+  grid-area: i1;
+}
+section .contenedor .t1 {
+  grid-area: t1;
+}
+section .contenedor .d1 {
+  grid-area: d1;
+}
+section .contenedor .img2 {
+  grid-area: i2;
+}
+section .contenedor .t2 {
+  grid-area: t2;
+}
+section .contenedor .d2 {
+  grid-area: d2;
+}
+section .contenedor .img3 {
+  grid-area: i3;
+}
+section .contenedor .t3 {
+  grid-area: t3;
+}
+section .contenedor .d3 {
+  grid-area: d3;
+}
+section .contenedor .img4 {
+  grid-area: i4;
+}
+section .contenedor .t4 {
+  grid-area: t4;
+}
+section .contenedor .d4 {
+  grid-area: d4;
+}
+section .contenedor .img5 {
+  grid-area: i5;
+}
+section .contenedor .t5 {
+  grid-area: t5;
+}
+section .contenedor .d5 {
+  grid-area: d5;
+}
+section .contenedor .img6 {
+  grid-area: i6;
+}
+section .contenedor .t6 {
+  grid-area: t6;
+}
+section .contenedor .d6 {
+  grid-area: d6;
+}
+section .contenedor .img7 {
+  grid-area: i7;
+}
+section .contenedor .t7 {
+  grid-area: t7;
+}
+section .contenedor .d7 {
+  grid-area: d7;
+}
+section .contenedor .img8 {
+  grid-area: i8;
+}
+section .contenedor .t8 {
+  grid-area: t8;
+}
+section .contenedor .d8 {
+  grid-area: d8;
+}
+section .contenedor .img9 {
+  grid-area: i9;
+}
+section .contenedor .t9 {
+  grid-area: t9;
+}
+section .contenedor .d9 {
+  grid-area: d9;
+}
+section .contenedor .img10 {
+  grid-area: i10;
+}
+section .contenedor .t10 {
+  grid-area: t10;
+}
+section .contenedor .d10 {
+  grid-area: d10;
+}
+section .contenedor .img11 {
+  grid-area: i11;
+}
+section .contenedor .t11 {
+  grid-area: t11;
+}
+section .contenedor .d11 {
+  grid-area: d11;
+}
+
 @media screen and (max-width: 1000px) {
   .titulo-nuestros {
-    font-size: 200%;
+    font-size: 300%;
     padding-top: 30px;
     margin-bottom: 0px;
+  }
+
+  .bekim {
+    font-size: 150%;
+  }
+
+  section .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "i1 i2" "t1 t2" "d1 d2" "i3 i4" "t3 t4" "d3 d4" "i5 i6" "t5 t6" "d5 d6" "i7 i8" "t7 t8" "d7 d8" "i9 i10" "t9 t10" "d9 d10" "i11 ." "t11 ." "d11 .";
+  }
+  section .contenedor p {
+    font-weight: bolder;
+    font-size: 100%;
   }
 }
 
