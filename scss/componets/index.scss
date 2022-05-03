@@ -15,7 +15,7 @@ h2 {
         padding: 10px;
         text-align: center;
         margin-left: 50px;
-        background-color: #F3E9DD;
+        background-color: #a3d4c6b0;
         border-radius: 20px;
     }
 
@@ -27,6 +27,62 @@ h2 {
 
 }
 
+
+
+.texto-objetivo {
+    padding-top: 140px;
+    margin-left: 20px;
+
+    .objetivo {
+        text-align: left;
+        font-weight: bolder;
+        font-size: 230%;
+    }
+}
+
+
+.nuestro-planeta {
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    .planeta {
+        font-size: 300%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .mundo {
+        width: 50%;
+    }
+}
+
+/* ------------------------- imagenes link rulitips ------------------------- */
+.preguntas {
+    padding: 70px 0;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+    .mucho-frizz {
+        width: 80%;
+        text-align: center;
+    }
+
+    .pelo-seco {
+        width: 80%;
+        text-align: center;
+    }
+
+    .puntas {
+        width: 80%;
+        text-align: center;
+    }
+}
 
 
 /* ------------------------------- Marcas logo ------------------------------ */
@@ -121,63 +177,6 @@ h2 {
     }
 }
 
-.texto-objetivo {
-    padding-top: 140px;
-    margin-left: 20px;
-
-    .objetivo {
-        color: #3d3934;
-        text-align: left;
-        font-weight: bolder;
-        font-size: 230%;
-    }
-}
-
-
-.nuestro-planeta {
-    padding: 150px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-
-    .planeta {
-        font-size: 300%;
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .mundo {
-        width: 50%;
-    }
-}
-
-/* ------------------------- imagenes link rulitips ------------------------- */
-.preguntas {
-    padding: 70px 0;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-
-    .mucho-frizz {
-        width: 70%;
-        text-align: center;
-    }
-
-    .pelo-seco {
-        width: 70%;
-        text-align: center;
-    }
-
-    .puntas {
-        width: 70%;
-        text-align: center;
-    }
-}
-
-
 
 .cuerpo {
     padding-top: 100px;
@@ -242,6 +241,7 @@ h2 {
 
     .texto-objetivo {
         padding-top: 380px;
+
         .objetivo {
             font-size: 180%;
         }
@@ -263,15 +263,17 @@ h2 {
         }
     }
 
-        .texto-objetivo {
-            padding-top: 380px;
-            .objetivo {
-                font-size: 150%;
-            }
+    .texto-objetivo {
+        padding-top: 380px;
+
+        .objetivo {
+            font-size: 150%;
         }
+    }
 
     .nuestro-planeta {
         padding: 100px 0;
+
         .planeta {
             font-size: 175%;
         }
@@ -291,14 +293,18 @@ h2 {
             top: 320px;
         }
     }
+
     .texto-objetivo {
         padding-top: 240px;
+
         .objetivo {
             font-size: 84%;
         }
     }
+
     .nuestro-planeta {
         padding: 50px 0;
+
         .planeta {
             margin-left: 20px;
             font-size: 100%;
@@ -308,6 +314,7 @@ h2 {
     .preguntas {
         padding: 10px 0 0 0;
     }
+
     .cuerpo {
         margin-top: 0px;
     }

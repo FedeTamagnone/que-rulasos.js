@@ -9,7 +9,8 @@
     transition: $transition;
 }
 
-$color-titulos: rgb(88, 71, 67);
+$color-titulos: rgb(61, 39, 34);
+$color-fondo-titulos:rgba(255, 255, 255, 0);
 
 @mixin area ($area, $width){
     grid-area: $area;

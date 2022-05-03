@@ -1,10 +1,10 @@
 .titulo-rulipedia {
     color: $color-titulos;
-    background-color: #F3E9DD;
+    background-color: $color-fondo-titulos;
     font-family: brittany;
     text-align: center;
     font-size: 800%;
-    padding: 35px 0;
+    padding: 40px 0;
     letter-spacing: 2px;
     margin-bottom: 80px;
     margin-top: 40px;
@@ -12,7 +12,6 @@
 
 
 section {
-
     h3 {
         font-family: 'Quicksand', sans-serif;
         margin-left: 30px;
