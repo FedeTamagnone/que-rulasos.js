@@ -2,26 +2,28 @@
     text-decoration: none;
     list-style-type: none;
 }
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
-    background-color: rgba(212, 180, 160, 255);
+    /* background-color: rgba(212, 180, 160, 255);*/
+    /*background-color: #cbc2b5;*/
+    background-color: #e6dad1;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 
-h2{
+h2 {
     font-family: 'Quicksand', sans-serif;
+    color: #444444;
 }
 
 p {
     font-family: 'Quicksand', sans-serif;
 }
-
-
-

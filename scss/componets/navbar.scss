@@ -1,17 +1,14 @@
 .logo {
     display: flex;
     justify-content: center;
-    padding-bottom: 15px;
-
+    margin-bottom: -30px;
     a {
         text-align: center;
-
         img {
-            width: 100%;
+            width: 60%;
         }
     }
 }
-
 
 nav {
     ul {
@@ -40,43 +37,43 @@ nav {
         transition-property: all;
         transition-duration: 1s;
         .palabra1 {
-            @include palabras(#926b43ef, 10px 5px, background-color 0.5s);
-            color: black;
+            @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);             
+            border-radius: 30px;
             
             &:hover {
-                background-color: rgb(51, 92, 43);
+                background-color: #838383;
             }
         }
 
         .palabra2 {
-            @include palabras(#926b43ef, 10px 5px, background-color 0.5s);
-
+            @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
+            border-radius: 30px;
             &:hover {
-                background-color: rgb(51, 92, 43);
+                background-color: #838383;
             }
         }
 
         .palabra3 {
-            @include palabras(#926b43ef, 10px 5px, background-color 0.5s);
-
+            @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
+            border-radius: 30px;
             &:hover {
-                background-color: rgb(51, 92, 43);
+                background-color: #838383;
             }
         }
 
         .palabra4 {
-            @include palabras(#926b43ef, 10px 5px, background-color 0.5s);
-
+            @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
+            border-radius: 30px;
             &:hover {
-                background-color: rgb(51, 92, 43);
+                background-color: #838383;
             }
         }
 
         .palabra5 {
-            @include palabras(#926b43ef, 10px 5px, background-color 0.5s);
-
+            @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
+            border-radius: 30px;
             &:hover {
-                background-color: rgb(51, 92, 43);
+                background-color: #838383;
             }
         }
     }
