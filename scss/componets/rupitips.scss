@@ -1,26 +1,28 @@
-.tips{
+.tips {
     padding: 0 50px 0 100px;
 
     h2 {
+        display: inline;
         font-size: 300%;
-        margin-bottom: 10px;
+        background-color: white;
     }
 
     p {
+        margin-top: 10px;
         font-size: 150%;
         margin-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .tips{
+    .tips {
         padding: 0 20px 0 20px;
-    
+
         h2 {
             font-size: 150%;
             margin-bottom: 5px;
         }
-    
+
         p {
             font-size: 80%;
             margin-bottom: 30px;
