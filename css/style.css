@@ -506,7 +506,7 @@ h2 a {
   padding: 40px 0;
   letter-spacing: 2px;
   margin-bottom: 80px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 section h3 {
@@ -552,9 +552,9 @@ section .cuadrado p li {
 @media screen and (max-width: 1000px) {
   .titulo-rulipedia {
     font-size: 400%;
-    padding-top: 30px;
+    padding-top: 35px;
     margin-bottom: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 }
 .cuerpo-contacto {
@@ -802,6 +802,20 @@ section .contenedor .d11 {
 .tips p {
   font-size: 150%;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .tips {
+    padding: 0 20px 0 20px;
+  }
+  .tips h2 {
+    font-size: 150%;
+    margin-bottom: 5px;
+  }
+  .tips p {
+    font-size: 80%;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
