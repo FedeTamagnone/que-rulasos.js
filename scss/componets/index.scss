@@ -221,18 +221,15 @@ h2 {
 @media screen and (max-width: 1000px) {
 
     .cuadro-intro {
-        display: inline;
+        display: flex;
 
         .intro {
-            position: relative;
-            top: 150px;
-            margin: 0 15px;
-            font-size: 175%;
+            margin: 0 10px;
+            font-size: 200%;
         }
-
         .intro-foto {
+            padding-top: 280px;
             position: absolute;
-            top: 500px;
             right: 1px;
             width: 60%;
             z-index: -1;
@@ -240,7 +237,7 @@ h2 {
     }
 
     .texto-objetivo {
-        padding-top: 380px;
+        padding-top: 300px;
 
         .objetivo {
             font-size: 180%;
@@ -259,13 +256,11 @@ h2 {
     .cuadro-intro {
         .intro-foto {
             position: absolute;
-            top: 300px;
+            top: 230px;
         }
     }
 
     .texto-objetivo {
-        padding-top: 380px;
-
         .objetivo {
             font-size: 150%;
         }
@@ -287,15 +282,19 @@ h2 {
 @media screen and (max-width: 500px) {
 
     .cuadro-intro {
+        padding-top: 10px;
+        .intro{
+            font-size: 1rem;
+        }
         .intro-foto {
-            width: 70%;
+            width: 60%;
             position: absolute;
-            top: 320px;
+            top: 26px;
         }
     }
 
     .texto-objetivo {
-        padding-top: 240px;
+        padding-top: 170px;
 
         .objetivo {
             font-size: 84%;
@@ -317,5 +316,21 @@ h2 {
 
     .cuerpo {
         margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cuadro-intro {
+        .intro{
+        }
+        .intro-foto {
+            width: 70%;
+            position: absolute;
+            top: -25px;
+        }
+    }
+    .texto-objetivo {
+        padding-top: 140px;
+        margin: 0 10px;
     }
 }

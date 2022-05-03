@@ -1,7 +1,7 @@
 .logo {
     display: flex;
     justify-content: center;
-    margin-bottom: -40px;
+    margin-bottom: -20px;
     a {
         text-align: center;
         img {
@@ -27,19 +27,16 @@ nav {
         font-family: 'Quicksand', sans-serif;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
         align-items: center;
         list-style: none;
-        position: relative;
-        top: -20px;
-        font-size: 2em;
-        margin-bottom: -80px;
         text-align: center;
+        font-size: 2.5rem;
         transition-property: all;
         transition-duration: 1s;
         .palabra1 {
             @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);             
             border-radius: 30px;
-            
             &:hover {
                 background-color: white;
             }
@@ -81,7 +78,6 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-
     .menu {
             .menu-1 {
                 font-size: 2rem;
@@ -108,6 +104,7 @@ nav {
 @media screen and (max-width: 650px) {
 
     .menu {
+        column-gap: 10px;
             .menu-1 {
                 font-size: 1rem;
             }
@@ -119,7 +116,7 @@ nav {
 
     .menu {
             .menu-1 {
-                font-size: 80%;
+                font-size: 0.65rem;
             }
         
     }

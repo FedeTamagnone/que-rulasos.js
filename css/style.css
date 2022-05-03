@@ -46,7 +46,7 @@ p {
 .logo {
   display: flex;
   justify-content: center;
-  margin-bottom: -40px;
+  margin-bottom: -20px;
 }
 .logo a {
   text-align: center;
@@ -64,13 +64,11 @@ nav ul li a {
   font-family: "Quicksand", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
   align-items: center;
   list-style: none;
-  position: relative;
-  top: -20px;
-  font-size: 2em;
-  margin-bottom: -80px;
   text-align: center;
+  font-size: 2.5rem;
   transition-property: all;
   transition-duration: 1s;
 }
@@ -135,13 +133,16 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 650px) {
+  .menu {
+    column-gap: 10px;
+  }
   .menu .menu-1 {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
   .menu .menu-1 {
-    font-size: 80%;
+    font-size: 0.65rem;
   }
 }
 h2 a {
@@ -328,24 +329,22 @@ h2 a {
 
 @media screen and (max-width: 1000px) {
   .cuadro-intro {
-    display: inline;
+    display: flex;
   }
   .cuadro-intro .intro {
-    position: relative;
-    top: 150px;
-    margin: 0 15px;
-    font-size: 175%;
+    margin: 0 10px;
+    font-size: 200%;
   }
   .cuadro-intro .intro-foto {
+    padding-top: 280px;
     position: absolute;
-    top: 500px;
     right: 1px;
     width: 60%;
     z-index: -1;
   }
 
   .texto-objetivo {
-    padding-top: 380px;
+    padding-top: 300px;
   }
   .texto-objetivo .objetivo {
     font-size: 180%;
@@ -358,12 +357,9 @@ h2 a {
 @media screen and (max-width: 850px) {
   .cuadro-intro .intro-foto {
     position: absolute;
-    top: 300px;
+    top: 230px;
   }
 
-  .texto-objetivo {
-    padding-top: 380px;
-  }
   .texto-objetivo .objetivo {
     font-size: 150%;
   }
@@ -380,14 +376,20 @@ h2 a {
   }
 }
 @media screen and (max-width: 500px) {
+  .cuadro-intro {
+    padding-top: 10px;
+  }
+  .cuadro-intro .intro {
+    font-size: 1rem;
+  }
   .cuadro-intro .intro-foto {
-    width: 70%;
+    width: 60%;
     position: absolute;
-    top: 320px;
+    top: 26px;
   }
 
   .texto-objetivo {
-    padding-top: 240px;
+    padding-top: 170px;
   }
   .texto-objetivo .objetivo {
     font-size: 84%;
@@ -407,6 +409,18 @@ h2 a {
 
   .cuerpo {
     margin-top: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cuadro-intro .intro-foto {
+    width: 70%;
+    position: absolute;
+    top: -25px;
+  }
+
+  .texto-objetivo {
+    padding-top: 140px;
+    margin: 0 10px;
   }
 }
 .pie-pagina {
@@ -506,7 +520,7 @@ h2 a {
   padding: 40px 0;
   letter-spacing: 2px;
   margin-bottom: 80px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 section h3 {
