@@ -41,7 +41,7 @@ nav {
             border-radius: 30px;
             
             &:hover {
-                background-color: #838383;
+                background-color: rgba(255, 255, 255, 0.486);
             }
         }
 
@@ -49,7 +49,7 @@ nav {
             @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
             border-radius: 30px;
             &:hover {
-                background-color: #838383;
+                background-color: rgba(255, 255, 255, 0.685);
             }
         }
 
@@ -57,7 +57,7 @@ nav {
             @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
             border-radius: 30px;
             &:hover {
-                background-color: #838383;
+                background-color: rgba(255, 255, 255, 0.24);
             }
         }
 
@@ -65,7 +65,7 @@ nav {
             @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
             border-radius: 30px;
             &:hover {
-                background-color: #838383;
+                background-color: white;
             }
         }
 
@@ -73,7 +73,7 @@ nav {
             @include palabras(rgba(255, 255, 255, 0), 10px 5px, background-color 0.5s);
             border-radius: 30px;
             &:hover {
-                background-color: #838383;
+                background-color: white;
             }
         }
     }

@@ -80,7 +80,7 @@ nav ul li a {
   border-radius: 30px;
 }
 .menu .menu-1 .palabra1:hover {
-  background-color: #838383;
+  background-color: rgba(255, 255, 255, 0.486);
 }
 .menu .menu-1 .palabra2 {
   background-color: rgba(255, 255, 255, 0);
@@ -89,7 +89,7 @@ nav ul li a {
   border-radius: 30px;
 }
 .menu .menu-1 .palabra2:hover {
-  background-color: #838383;
+  background-color: rgba(255, 255, 255, 0.685);
 }
 .menu .menu-1 .palabra3 {
   background-color: rgba(255, 255, 255, 0);
@@ -98,7 +98,7 @@ nav ul li a {
   border-radius: 30px;
 }
 .menu .menu-1 .palabra3:hover {
-  background-color: #838383;
+  background-color: rgba(255, 255, 255, 0.24);
 }
 .menu .menu-1 .palabra4 {
   background-color: rgba(255, 255, 255, 0);
@@ -107,7 +107,7 @@ nav ul li a {
   border-radius: 30px;
 }
 .menu .menu-1 .palabra4:hover {
-  background-color: #838383;
+  background-color: white;
 }
 .menu .menu-1 .palabra5 {
   background-color: rgba(255, 255, 255, 0);
@@ -116,7 +116,7 @@ nav ul li a {
   border-radius: 30px;
 }
 .menu .menu-1 .palabra5:hover {
-  background-color: #838383;
+  background-color: white;
 }
 
 @media screen and (max-width: 1000px) {
