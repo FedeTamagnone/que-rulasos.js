@@ -60,3 +60,17 @@ section {
         padding-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    section {
+        h3 {
+            font-size: 110%;
+        }
+
+        .cuadrado {
+            p {
+                font-size: 100%;
+            }
+        }
+    }
+}

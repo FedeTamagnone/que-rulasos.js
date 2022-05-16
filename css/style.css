@@ -566,6 +566,14 @@ section .cuadrado p li {
     padding-bottom: 20px;
   }
 }
+@media screen and (max-width: 450px) {
+  section h3 {
+    font-size: 110%;
+  }
+  section .cuadrado p {
+    font-size: 100%;
+  }
+}
 .cuerpo-contacto {
   padding-top: 100px;
 }
