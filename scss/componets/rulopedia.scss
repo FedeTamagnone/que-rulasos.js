@@ -22,27 +22,22 @@ section {
     }
 
     .cuadrado {
-        background-color: rgb(238, 216, 189);
-        margin-left: 10px;
-        margin-right: 10px;
+        background-color: white;
+        margin: 0 10px;
         border-radius: 15px;
-        
+
         p {
             text-align: justify;
-            margin-top: 10px;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            margin: 10px 20px 0 20px;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 130%;
 
             li {
                 font-family: 'Quicksand', sans-serif;
                 text-align: justify;
-                margin-top: 10px;
-                margin-left: 20px;
-                margin-right: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                margin: 10px 20px 0 20px;
+                padding: 10px 0;
             }
         }
     }
