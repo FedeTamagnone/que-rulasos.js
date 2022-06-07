@@ -1,12 +1,6 @@
 // Futuro carrito de compras
 
 
-/* function total(){
-    let cantidad = prompt("$40.- el shampoo, ¿Cuántos vas a llevar?")
-    let precio= alert ("$" + cantidad * 40 + " sería el total");
-}
-total(); */
-
 function producto() {
     let listado = prompt("¿Qué producto quiere llevar?: \n 1- Jabon $10 \n 2- Crema $20 \n 3- Peine $30")
     switch (listado) {
@@ -27,4 +21,4 @@ function producto() {
 
 producto();
 
-alert("Gracias por tu compra")
+console.log("Gracias por tu compra");

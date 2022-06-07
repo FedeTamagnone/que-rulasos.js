@@ -55,6 +55,23 @@ section {
             font-size: 150%;
         }
 
+
+        button {
+            font-family: 'Quicksand', sans-serif;
+            font-size: medium;
+            color: black;
+            border-width: 0px;
+            border-radius: 4px;
+            padding: 2px 20px;
+            background-color: #e6dad1;
+            margin-top: 2px;
+
+            :hover {
+                background-color: lightblue;
+            }
+        }
+
+
         .img1 {
             grid-area: i1;
         }
@@ -81,6 +98,7 @@ section {
 
         .img3 {
             grid-area: i3;
+            padding-top: 30%;
         }
 
         .t3 {

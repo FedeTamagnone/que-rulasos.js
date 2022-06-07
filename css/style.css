@@ -648,6 +648,19 @@ section .contenedor p {
   font-weight: bolder;
   font-size: 150%;
 }
+section .contenedor button {
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  color: black;
+  border-width: 0px;
+  border-radius: 4px;
+  padding: 2px 20px;
+  background-color: #e6dad1;
+  margin-top: 2px;
+}
+section .contenedor button :hover {
+  background-color: lightblue;
+}
 section .contenedor .img1 {
   grid-area: i1;
 }
@@ -668,6 +681,7 @@ section .contenedor .d2 {
 }
 section .contenedor .img3 {
   grid-area: i3;
+  padding-top: 30%;
 }
 section .contenedor .t3 {
   grid-area: t3;
