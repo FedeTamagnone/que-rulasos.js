@@ -1,19 +1,21 @@
 // Futuro carrito de compras
 
 
+const carritoFinal = []
+
 function producto() {
     let listado = prompt("¿Qué producto quiere llevar?: \n 1- Jabon $10 \n 2- Crema $20 \n 3- Peine $30")
     switch (listado) {
         case "1":
             let cantidad = prompt("¿Cuántos Jabones queres llevar?")
-            let precio = (cantidad * 10);
-
+            let precio = (cantidad * 10)
             const carrito = [{
                 Producto: "Jabón",
                 Cantidad: cantidad,
                 Total: "$" + precio
             }]
-            console.log(carrito);
+            carritoFinal.push(carrito)
+
             break;
 
         case "2":
@@ -25,7 +27,7 @@ function producto() {
                 Cantidad: cantidad1,
                 Total: "$" + precio1
             }]
-            console.log(carrito1);
+            carritoFinal.push(carrito1)
             break;
 
         case "3":
@@ -37,9 +39,12 @@ function producto() {
                 Cantidad: cantidad2,
                 Total: "$" + precio2
             }]
-            console.log(carrito2);
+            carritoFinal.push(carrito2)
             break;
     }
 }
 
 producto()
+console.log(carritoFinal);
+producto()
+console.log(carritoFinal);
