@@ -42,9 +42,13 @@ function producto() {
             carritoFinal.push(carrito2)
             break;
     }
+    let agregarListado=prompt("¿Querés agregar otro producto SI/NO?")
+    if (agregarListado == "si"){
+        return producto();
+    } else {
+        console.log(carritoFinal);
+    }
 }
 
 producto()
-console.log(carritoFinal);
-producto()
-console.log(carritoFinal);
+
