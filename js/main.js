@@ -56,4 +56,4 @@ const precioFinal = carritoFinal.reduce( (acc, item) =>{
     return acc += item.total;
 }, 0)
 
-console.log("El total a abonar es de $" + precioFinal);
+console.log("El total a abonar es de $" + precioFinal + "\n Gracias por su compra");
