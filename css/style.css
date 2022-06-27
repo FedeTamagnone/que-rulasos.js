@@ -631,6 +631,13 @@ section .cuadrado p li {
   display: flex;
   justify-content: center;
 }
+.buscador #buscarTipo {
+  font-size: 40px;
+  border: none;
+  background-color: #e6dad1;
+  text-align: center;
+  width: 50%;
+}
 
 main {
   background-color: white;
@@ -639,16 +646,15 @@ main {
   padding: 0 10px 10px;
   text-align: center;
   display: grid;
+  align-items: flex-end;
   gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-main .producto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 main .producto .card {
   border: none;
+}
+main .producto .card .card-imagen {
+  margin-bottom: 5px;
 }
 main .producto .card .card-imagen .card-titulo {
   font-size: 20px;
@@ -657,7 +663,7 @@ main .producto .card .card-contenido {
   font-size: 10px;
 }
 main .producto .card .card-contenido .precio {
-  font-size: 15px;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -683,6 +689,26 @@ button {
 }
 button :hover {
   background-color: lightblue;
+}
+
+.carro-contenedor {
+  margin-left: 20px;
+}
+.carro-contenedor .carrito h3 {
+  font-size: 50px;
+}
+.carro-contenedor .carrito #carrito-contenedor .producto-carrito {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.carro-contenedor .carrito #carrito-contenedor .producto-carrito button {
+  color: red;
+  padding: 0;
+}
+.carro-contenedor .carrito #terminar {
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1000px) {

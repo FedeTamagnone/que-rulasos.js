@@ -62,19 +62,15 @@ let carritoDeCompras = []
 
 const contenedorProductos = document.getElementById('contenedor-productos');
 const contenedorCarrito = document.getElementById('carrito-contenedor');
-
-const botonTerminar = document.getElementById('terminar')
 const finCompra = document.getElementById('fin-compra')
-
-const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
-
 const buscarTipo = document.getElementById('buscarTipo')
-const buscador = document.getElementById('search')
+const botonTerminar = document.getElementById('terminar')
 
 
 
-//filtro
+
+//filtro de productos por su TIPO
 buscarTipo.addEventListener('change', () => {
 
     if (buscarTipo.value == 'all') {
@@ -86,23 +82,18 @@ buscarTipo.addEventListener('change', () => {
     }
 })
 
-//Buscado
-
 mostrarProductos(stockProductos)
 
-//logica Ecommerce
 function mostrarProductos(array) {
 // Vacía html para mostrar solo los array filtrados
     contenedorProductos.innerHTML = ""
 
     for (const el of array) {
-// sino tambien puedo usar 
-//array.forEach( el => {
+
 /* ------------------------------ Creando card ------------------------------ */
         let div = document.createElement('div')
 /* --------------------------- asigno class al div -------------------------- */
         div.className = 'producto'
-
         div.innerHTML = ` <div class="card">
                                 <div class="card-imagen">
                                     <img src="${el.img}">
@@ -115,11 +106,11 @@ function mostrarProductos(array) {
                                     <p class="precio"> $ ${el.precio}</p>
                                 </div>
                             </div>`
-//Agrego card en el html con append
+
+/* -------------------- Agrego card en el html con appendChild ------------------- */
         contenedorProductos.appendChild(div)
 
         let btnAgregar = document.getElementById(`boton${el.id}`)
-
         btnAgregar.addEventListener('click', () => {
             agregarAlCarrito(el.id);
         })
@@ -130,34 +121,33 @@ function mostrarProductos(array) {
 // uso id, para seleccionar puntualmente producto
 // find busca un solo elemento
 function agregarAlCarrito(id) {
-    //repite se fija si se repite id
+//Si agrega el mismo producto se acumula por el ID y no se agrega como producto nuevo 
     let repite = carritoDeCompras.find(el => el.id == id)
-
     if (repite) {
-        repite.cantidad = repite.cantidad + 1 //creo una propiedad, cantidad. 
+        repite.cantidad = repite.cantidad + 1 
         document.getElementById(`cantidad${repite.id}`).innerHTML = `<p id="cantidad${repite.id}">cantidad: ${repite.cantidad}</p>`
         actualizarCarrito()
     } else {
         let productoAgregar = stockProductos.find(ele => ele.id === id)
         productoAgregar.cantidad = 1
-        carritoDeCompras.push(productoAgregar) //con eso push al producto que seleccione con id al carrito
+        carritoDeCompras.push(productoAgregar) //con eso pusheo al producto que seleccione con id al carrito
         actualizarCarrito()
-        mostrarCarrito(productoAgregar)
+        Carrito(productoAgregar)
     }
-
 }
 
-
-
-function mostrarCarrito(productoAgregar) {
-
+//Agrega HTML productos al carrito
+function Carrito(productoAgregar) {
     let div = document.createElement('div')
-    div.classList.add('productoEnCarrito')
-    div.innerHTML = `<p>${productoAgregar.nombre}</p>
+    div.classList.add('producto-carrito')
+    div.innerHTML = `<p> Producto: ${productoAgregar.nombre}</p>
                 <p>Precio: $${productoAgregar.precio}</p>
-                <p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>
-                <button id="eliminar${productoAgregar.id}" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>`
+                <p id="cantidad${productoAgregar.id}" class="cantidades">Cantidad: ${productoAgregar.cantidad}</p>
+                <button id="eliminar${productoAgregar.id}"> Eliminar producto </button>`
     contenedorCarrito.appendChild(div)
+
+
+//Funcion Eliminar: si cantidad es igual a 1 elimina producto, si candidad no es 1 resta productos
 
     let btnEliminar = document.getElementById(`eliminar${productoAgregar.id}`)
     btnEliminar.addEventListener('click', () => {
@@ -170,15 +160,14 @@ function mostrarCarrito(productoAgregar) {
             document.getElementById(`cantidad${productoAgregar.id}`).innerHTML = `<p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>`
             actualizarCarrito()
         }
-
-
     })
 }
 
-
-
-
+/* --------------------- Multiplica precio por cantidad --------------------- */
 function actualizarCarrito() {
-    contadorCarrito.innerText = carritoDeCompras.reduce((acc, el) => acc + el.cantidad, 0)
     precioTotal.innerText = carritoDeCompras.reduce((acc, el) => acc + (el.precio * el.cantidad), 0)
 }
+
+botonTerminar.addEventListener("click", ()=>{
+    alert("Gracias por su compra")
+})
