@@ -627,28 +627,51 @@ section .cuadrado p li {
   margin-top: 20px;
 }
 
-section .contenedor {
+.buscador {
+  display: flex;
+  justify-content: center;
+}
+
+main {
   background-color: white;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px;
-  justify-items: center;
-  align-items: center;
-  grid-template-areas: "i1 i2 i3 i4" "t1 t2 t3 t4" "d1 d2 d3 d4" "i5 i6 i7 i8" "t5 t6 t7 t8" "d5 d6 d7 d8" "i9 i10 i11 ." "t9 t10 t11 ." "d9 d10 d11 .";
   margin: 20px;
   padding: 0 10px 10px;
   text-align: center;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-section .contenedor img {
-  width: 100%;
+main .producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .producto .card {
+  border: none;
+}
+main .producto .card .card-imagen .card-titulo {
+  font-size: 20px;
+}
+main .producto .card .card-contenido {
+  font-size: 10px;
+}
+main .producto .card .card-contenido .precio {
+  font-size: 15px;
+  font-style: italic;
+}
+
+img {
+  width: 50%;
   margin-top: 30px;
 }
-section .contenedor p {
+
+p {
   font-weight: bolder;
   font-size: 150%;
 }
-section .contenedor button {
+
+button {
   font-family: "Quicksand", sans-serif;
   font-size: medium;
   color: black;
@@ -658,108 +681,8 @@ section .contenedor button {
   background-color: #e6dad1;
   margin-top: 2px;
 }
-section .contenedor button :hover {
+button :hover {
   background-color: lightblue;
-}
-section .contenedor .img1 {
-  grid-area: i1;
-}
-section .contenedor .t1 {
-  grid-area: t1;
-}
-section .contenedor .d1 {
-  grid-area: d1;
-}
-section .contenedor .img2 {
-  grid-area: i2;
-}
-section .contenedor .t2 {
-  grid-area: t2;
-}
-section .contenedor .d2 {
-  grid-area: d2;
-}
-section .contenedor .img3 {
-  grid-area: i3;
-  padding-top: 30%;
-}
-section .contenedor .t3 {
-  grid-area: t3;
-}
-section .contenedor .d3 {
-  grid-area: d3;
-}
-section .contenedor .img4 {
-  grid-area: i4;
-}
-section .contenedor .t4 {
-  grid-area: t4;
-}
-section .contenedor .d4 {
-  grid-area: d4;
-}
-section .contenedor .img5 {
-  grid-area: i5;
-}
-section .contenedor .t5 {
-  grid-area: t5;
-}
-section .contenedor .d5 {
-  grid-area: d5;
-}
-section .contenedor .img6 {
-  grid-area: i6;
-}
-section .contenedor .t6 {
-  grid-area: t6;
-}
-section .contenedor .d6 {
-  grid-area: d6;
-}
-section .contenedor .img7 {
-  grid-area: i7;
-}
-section .contenedor .t7 {
-  grid-area: t7;
-}
-section .contenedor .d7 {
-  grid-area: d7;
-}
-section .contenedor .img8 {
-  grid-area: i8;
-}
-section .contenedor .t8 {
-  grid-area: t8;
-}
-section .contenedor .d8 {
-  grid-area: d8;
-}
-section .contenedor .img9 {
-  grid-area: i9;
-}
-section .contenedor .t9 {
-  grid-area: t9;
-}
-section .contenedor .d9 {
-  grid-area: d9;
-}
-section .contenedor .img10 {
-  grid-area: i10;
-}
-section .contenedor .t10 {
-  grid-area: t10;
-}
-section .contenedor .d10 {
-  grid-area: d10;
-}
-section .contenedor .img11 {
-  grid-area: i11;
-}
-section .contenedor .t11 {
-  grid-area: t11;
-}
-section .contenedor .d11 {
-  grid-area: d11;
 }
 
 @media screen and (max-width: 1000px) {
