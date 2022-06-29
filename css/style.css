@@ -627,19 +627,27 @@ section .cuadrado p li {
   margin-top: 20px;
 }
 
-.buscador {
-  display: flex;
-  justify-content: center;
+main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
-.buscador #buscarTipo {
+main .filtrador {
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 0 10px 10px;
+}
+main .filtrador .buscador {
+  background-color: white;
+}
+main .filtrador .buscador select {
   font-size: 40px;
   border: none;
-  background-color: #e6dad1;
+  background-color: white;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
-
-main {
+main #contenedor-productos {
   background-color: white;
   border-radius: 20px;
   margin: 20px;
@@ -648,7 +656,7 @@ main {
   display: grid;
   align-items: flex-end;
   gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 main .producto .card {
   border: none;

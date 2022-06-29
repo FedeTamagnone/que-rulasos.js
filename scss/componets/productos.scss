@@ -18,30 +18,41 @@
     margin-top: 20px;
 }
 
-.buscador {
-    display: flex;
-    justify-content: center;
-
-    #buscarTipo {
-        font-size: 40px;
-        border: none;
-        background-color: #e6dad1;
-        text-align: center;
-        width: 50%;
-    }
-}
 
 main {
-
-    background-color: white;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 0 10px 10px;
-    text-align: center;
     display: grid;
-    align-items: flex-end;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 4fr 1fr;
+
+    .filtrador {
+        background-color: white;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 0 10px 10px;
+
+        .buscador {
+            background-color: white;
+
+            select {
+                font-size: 40px;
+                border: none;
+                background-color: white;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+
+    #contenedor-productos {
+        background-color: white;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 0 10px 10px;
+        text-align: center;
+        display: grid;
+        align-items: flex-end;
+        gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 
     .producto {
 
@@ -116,8 +127,6 @@ button {
             }
 
         }
-
-        .precioProducto {}
 
         #terminar {
             font-weight: bold;

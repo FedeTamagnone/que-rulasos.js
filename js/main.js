@@ -65,6 +65,7 @@ const contenedorCarrito = document.getElementById('carrito-contenedor');
 const finCompra = document.getElementById('fin-compra')
 const precioTotal = document.getElementById('precioTotal');
 const buscarTipo = document.getElementById('buscarTipo')
+const buscarMarca = document.getElementById('buscarMarca')
 const botonTerminar = document.getElementById('terminar')
 
 
@@ -77,10 +78,14 @@ buscarTipo.addEventListener('change', () => {
         mostrarProductos(stockProductos)
     } else {
         let arrayNuevo = stockProductos.filter(item => item.tipo == buscarTipo.value) //array nuevo
-
         mostrarProductos(arrayNuevo)
     }
 })
+
+
+
+
+
 
 mostrarProductos(stockProductos)
 
@@ -149,7 +154,7 @@ function Carrito(productoAgregar) {
                 <p id="cantidad${productoAgregar.id}" class="cantidades">Cantidad: ${productoAgregar.cantidad}</p>
                 <button id="eliminar${productoAgregar.id}"> Eliminar producto </button>`
     contenedorCarrito.appendChild(div)
-
+    localStorage.setItem('datosCarrito', JSON.stringify(carritoDeCompras));
 
 //Funcion Eliminar: si cantidad es igual a 1 elimina producto, si candidad no es 1 resta productos
 
