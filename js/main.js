@@ -56,7 +56,7 @@ const precioFinal = carritoFinal.reduce( (acc, item) =>{
 
 console.log("El total a abonar es de $" + precioFinal + "\nGracias por su compra"); */
 
-
+//variable que irá almacenando las compras en un array
 let carritoDeCompras = []
 //Variables globales
 
@@ -110,6 +110,7 @@ function mostrarProductos(array) {
 /* -------------------- Agrego card en el html con appendChild ------------------- */
         contenedorProductos.appendChild(div)
 
+/* -------------------------- clic en boton agregar ------------------------- */
         let btnAgregar = document.getElementById(`boton${el.id}`)
         btnAgregar.addEventListener('click', () => {
             agregarAlCarrito(el.id);
@@ -125,10 +126,11 @@ function agregarAlCarrito(id) {
     let repite = carritoDeCompras.find(el => el.id == id)
     if (repite) {
         repite.cantidad = repite.cantidad + 1 
-        document.getElementById(`cantidad${repite.id}`).innerHTML = `<p id="cantidad${repite.id}">cantidad: ${repite.cantidad}</p>`
+        document.getElementById(`cantidad${repite.id}`).innerHTML = `<p id="cantidad${repite.id}"> cantidad: ${repite.cantidad}</p>`
+        carritoDeCompras.push(repite) 
         actualizarCarrito()
     } else {
-        let productoAgregar = stockProductos.find(ele => ele.id === id)
+        let productoAgregar = stockProductos.find(el => el.id === id)
         productoAgregar.cantidad = 1
         carritoDeCompras.push(productoAgregar) //con eso pusheo al producto que seleccione con id al carrito
         actualizarCarrito()
@@ -136,7 +138,9 @@ function agregarAlCarrito(id) {
     }
 }
 
-//Agrega HTML productos al carrito
+
+
+/* -------------------- Agrega HTML productos al carrito -------------------- */
 function Carrito(productoAgregar) {
     let div = document.createElement('div')
     div.classList.add('producto-carrito')
@@ -171,3 +175,7 @@ function actualizarCarrito() {
 botonTerminar.addEventListener("click", ()=>{
     alert("Gracias por su compra")
 })
+
+
+
+localStorage.setItem('datos', JSON.stringify(carritoDeCompras));
