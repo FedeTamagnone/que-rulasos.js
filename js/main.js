@@ -132,8 +132,8 @@ function agregarAlCarrito(id) {
     if (repite) {
         repite.cantidad = repite.cantidad + 1 
         document.getElementById(`cantidad${repite.id}`).innerHTML = `<p id="cantidad${repite.id}"> cantidad: ${repite.cantidad}</p>`
-        carritoDeCompras.push(repite) 
         actualizarCarrito()
+        carritoDeCompras.push(repite) 
     } else {
         let productoAgregar = stockProductos.find(el => el.id === id)
         productoAgregar.cantidad = 1
@@ -179,10 +179,7 @@ function actualizarCarrito() {
 
 botonTerminar.addEventListener("click", ()=>{
     alert("Gracias por su compra")
-    contenedorCarrito.innerHTML = ""
-    precioTotal.innerText = "0"
+    contenedorCarrito.innerHTML = "";
+    precioTotal.innerText = "0";
+    localStorage.clear();
 })
-
-
-
-localStorage.setItem('datos', JSON.stringify(carritoDeCompras));
