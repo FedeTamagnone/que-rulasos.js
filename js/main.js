@@ -174,6 +174,8 @@ function actualizarCarrito() {
 
 botonTerminar.addEventListener("click", ()=>{
     alert("Gracias por su compra")
+    contenedorCarrito.innerHTML = ""
+    precioTotal.innerText = "0"
 })
 
 
