@@ -88,20 +88,28 @@ function mostrarProductos(array) {
     // Vacía html para mostrar solo los array filtrados
     contenedorProductos.innerHTML = ""
     for (const el of array) {
+    //Desestructuro el
+        let {
+            nombre,
+            img,
+            id,
+            desc,
+            precio
+        } = el
         /* ----------------------------- Creando card ------------------------------ */
         let div = document.createElement('div')
         /* --------------------------- asigno class al div -------------------------- */
         div.className = 'producto'
         div.innerHTML = ` <div class="card">
                                 <div class="card-imagen">
-                                    <img src="${el.img}">
+                                    <img src="${img}">
                                     <br>
-                                    <p class="card-titulo">${el.nombre}</p>
-                                    <button id="boton${el.id}"> Agregar </button>
+                                    <p class="card-titulo">${nombre}</p>
+                                    <button id="boton${id}"> Agregar </button>
                                 </div>
                                 <div class="card-contenido">
-                                    <p>${el.desc}</p>
-                                    <p class="precio"> $ ${el.precio}</p>
+                                    <p>${desc}</p>
+                                    <p class="precio"> $ ${precio}</p>
                                 </div>
                             </div>`
 
@@ -113,13 +121,13 @@ function mostrarProductos(array) {
         btnAgregar.addEventListener('click', () => {
             Toastify({
                 text: "Agregado a carrito",
-                duration: 3000,
+                duration: 1000,
                 close: true,
-                gravity: "top", 
-                position: "right", 
-                stopOnFocus: true, 
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
                 style: {
-                background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    background: "black",
                 },
                 onClick: function () {} // Callback after click
             }).showToast();
@@ -153,11 +161,12 @@ function agregarAlCarrito(id) {
 /* -------------------- Agrega HTML productos al carrito -------------------- */
 function Carrito(productoAgregar) {
     let div = document.createElement('div')
+    let {nombre,precio,id,cantidad} = productoAgregar
     div.classList.add('producto-carrito')
-    div.innerHTML = `<p> Producto: ${productoAgregar.nombre}</p>
-                <p>Precio: $${productoAgregar.precio}</p>
-                <p id="cantidad${productoAgregar.id}" class="cantidades">Cantidad: ${productoAgregar.cantidad}</p>
-                <button id="eliminar${productoAgregar.id}"> Eliminar producto </button>`
+    div.innerHTML = `<p> Producto: ${nombre}</p>
+                <p>Precio: $${precio}</p>
+                <p id="cantidad${id}" class="cantidades">Cantidad: ${cantidad}</p>
+                <button id="eliminar${id}"> Eliminar producto </button>`
     contenedorCarrito.appendChild(div)
     localStorage.setItem('datosCarrito', JSON.stringify(carritoDeCompras));
 
