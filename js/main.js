@@ -65,7 +65,6 @@ const contenedorCarrito = document.getElementById('carrito-contenedor');
 const finCompra = document.getElementById('fin-compra')
 const precioTotal = document.getElementById('precioTotal');
 const buscarTipo = document.getElementById('buscarTipo')
-const buscarMarca = document.getElementById('buscarMarca')
 const botonTerminar = document.getElementById('terminar')
 
 
@@ -83,21 +82,15 @@ buscarTipo.addEventListener('change', () => {
 })
 
 
-
-
-
-
 mostrarProductos(stockProductos)
 
 function mostrarProductos(array) {
-// Vacía html para mostrar solo los array filtrados
+    // Vacía html para mostrar solo los array filtrados
     contenedorProductos.innerHTML = ""
-
     for (const el of array) {
-
-/* ------------------------------ Creando card ------------------------------ */
+        /* ----------------------------- Creando card ------------------------------ */
         let div = document.createElement('div')
-/* --------------------------- asigno class al div -------------------------- */
+        /* --------------------------- asigno class al div -------------------------- */
         div.className = 'producto'
         div.innerHTML = ` <div class="card">
                                 <div class="card-imagen">
@@ -112,12 +105,24 @@ function mostrarProductos(array) {
                                 </div>
                             </div>`
 
-/* -------------------- Agrego card en el html con appendChild ------------------- */
+        /* -------------------- Agrego card en el html con appendChild ------------------- */
         contenedorProductos.appendChild(div)
 
-/* -------------------------- clic en boton agregar ------------------------- */
+        /* -------------------------- clic en boton agregar ------------------------- */
         let btnAgregar = document.getElementById(`boton${el.id}`)
         btnAgregar.addEventListener('click', () => {
+            Toastify({
+                text: "Agregado a carrito",
+                duration: 3000,
+                close: true,
+                gravity: "top", 
+                position: "right", 
+                stopOnFocus: true, 
+                style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function () {} // Callback after click
+            }).showToast();
             agregarAlCarrito(el.id);
         })
     }
@@ -127,13 +132,13 @@ function mostrarProductos(array) {
 // uso id, para seleccionar puntualmente producto
 // find busca un solo elemento
 function agregarAlCarrito(id) {
-//Si agrega el mismo producto se acumula por el ID y no se agrega como producto nuevo 
+    //Si agrega el mismo producto se acumula por el ID y no se agrega como producto nuevo 
     let repite = carritoDeCompras.find(el => el.id == id)
     if (repite) {
-        repite.cantidad = repite.cantidad + 1 
+        repite.cantidad = repite.cantidad + 1
         document.getElementById(`cantidad${repite.id}`).innerHTML = `<p id="cantidad${repite.id}"> cantidad: ${repite.cantidad}</p>`
         actualizarCarrito()
-        carritoDeCompras.push(repite) 
+        carritoDeCompras.push(repite)
     } else {
         let productoAgregar = stockProductos.find(el => el.id === id)
         productoAgregar.cantidad = 1
@@ -156,8 +161,10 @@ function Carrito(productoAgregar) {
     contenedorCarrito.appendChild(div)
     localStorage.setItem('datosCarrito', JSON.stringify(carritoDeCompras));
 
-//Funcion Eliminar: si cantidad es igual a 1 elimina producto, si candidad no es 1 resta productos
+    /*     let carritoLocal = localStorage.getItem(JSON.parse("datosCarrito"));
+        div.innerText = carritoLocal; */
 
+    //Funcion Eliminar: si cantidad es igual a 1 elimina producto, si candidad no es 1 resta productos
     let btnEliminar = document.getElementById(`eliminar${productoAgregar.id}`)
     btnEliminar.addEventListener('click', () => {
         if (productoAgregar.cantidad == 1) {
@@ -177,8 +184,14 @@ function actualizarCarrito() {
     precioTotal.innerText = carritoDeCompras.reduce((acc, el) => acc + (el.precio * el.cantidad), 0)
 }
 
-botonTerminar.addEventListener("click", ()=>{
-    alert("Gracias por su compra")
+botonTerminar.addEventListener("click", () => {
+    Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Gracias por su compra',
+        showConfirmButton: false,
+        timer: 1500
+    })
     contenedorCarrito.innerHTML = "";
     precioTotal.innerText = "0";
     localStorage.clear();
