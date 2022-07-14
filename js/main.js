@@ -165,8 +165,8 @@ function Carrito(productoAgregar) {
     div.classList.add('producto-carrito')
     div.innerHTML = `<p> Producto: ${nombre}</p>
                 <p>Precio: $${precio}</p>
-                <p id="cantidad${id}" class="cantidades">Cantidad: ${cantidad}</p>
-                <button id="eliminar${id}"> Eliminar producto </button>`
+                <p id="cantidad${id}" class="cantidades"> Cantidad: ${cantidad}</p>
+                <button id="eliminar${id}"> - </button>`
     contenedorCarrito.appendChild(div)
     localStorage.setItem('datosCarrito', JSON.stringify(carritoDeCompras));
 
@@ -195,7 +195,7 @@ function actualizarCarrito() {
 
 botonTerminar.addEventListener("click", () => {
     Swal.fire({
-        position: 'top-center',
+        position: 'center',
         icon: 'success',
         title: 'Gracias por su compra',
         showConfirmButton: false,

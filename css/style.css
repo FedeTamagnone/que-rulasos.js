@@ -707,11 +707,16 @@ button :hover {
 }
 .carro-contenedor .carrito #carrito-contenedor .producto-carrito {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+.carro-contenedor .carrito #carrito-contenedor .producto-carrito p {
+  margin: 0;
+}
 .carro-contenedor .carrito #carrito-contenedor .producto-carrito button {
+  font-size: 50px;
   color: red;
-  padding: 0;
+  margin: 0;
 }
 .carro-contenedor .carrito #terminar {
   font-weight: bold;
