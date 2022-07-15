@@ -118,15 +118,17 @@ button {
             .producto-carrito {
                 display: grid;
                 align-items: center;
+                gap: 10px;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
                 p {
+                    font-size: 120%;
                     margin: 0;
                 }
 
                 button {
-                    font-size: 50px;
-                    color: red;
+
+                    color: black;
                     margin: 0;
                 }
 

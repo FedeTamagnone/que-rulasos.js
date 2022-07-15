@@ -708,14 +708,15 @@ button :hover {
 .carro-contenedor .carrito #carrito-contenedor .producto-carrito {
   display: grid;
   align-items: center;
+  gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .carro-contenedor .carrito #carrito-contenedor .producto-carrito p {
+  font-size: 120%;
   margin: 0;
 }
 .carro-contenedor .carrito #carrito-contenedor .producto-carrito button {
-  font-size: 50px;
-  color: red;
+  color: black;
   margin: 0;
 }
 .carro-contenedor .carrito #terminar {

@@ -69,7 +69,6 @@ const botonTerminar = document.getElementById('terminar')
 
 
 
-
 //filtro de productos por su TIPO
 buscarTipo.addEventListener('change', () => {
 
@@ -81,12 +80,10 @@ buscarTipo.addEventListener('change', () => {
     }
 })
 
-
 mostrarProductos(stockProductos)
 
 function mostrarProductos(array) {
-    // Vacía html para mostrar solo los array filtrados
-    contenedorProductos.innerHTML = ""
+    contenedorProductos.innerHTML = "" // Vacía html para mostrar solo los array filtrados
     for (const el of array) {
     //Desestructuro el
         let {
@@ -96,9 +93,8 @@ function mostrarProductos(array) {
             desc,
             precio
         } = el
-        /* ----------------------------- Creando card ------------------------------ */
+
         let div = document.createElement('div')
-        /* --------------------------- asigno class al div -------------------------- */
         div.className = 'producto'
         div.innerHTML = ` <div class="card">
                                 <div class="card-imagen">
@@ -166,7 +162,7 @@ function Carrito(productoAgregar) {
     div.innerHTML = `<p> Producto: ${nombre}</p>
                 <p>Precio: $${precio}</p>
                 <p id="cantidad${id}" class="cantidades"> Cantidad: ${cantidad}</p>
-                <button id="eliminar${id}"> - </button>`
+                <button id="eliminar${id}"> Restar producto </button>`
     contenedorCarrito.appendChild(div)
     localStorage.setItem('datosCarrito', JSON.stringify(carritoDeCompras));
 
