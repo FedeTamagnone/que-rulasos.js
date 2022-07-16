@@ -73,25 +73,13 @@ const datos = "./js/datos.json"
 
 
 
-//filtro de productos por su TIPO
-buscarTipo.addEventListener('change', () => {
-
-    if (buscarTipo.value == 'all') {
-        mostrarProductos(stockProductos)
-    } else {
-        let arrayNuevo = stockProductos.filter(item => item.tipo == buscarTipo.value) //array nuevo
-        mostrarProductos(arrayNuevo)
-    }
-})
-
-//mostrarProductos(stockProductos)
 
 const mostrarProductos = async () => {
     contenedorProductos.innerHTML = "" // Vacía html para mostrar solo los array filtrados
     const respuesta = await fetch(datos)
     const productos = await respuesta.json()
     productos.forEach((el) => {
-    //for (const el of array) {
+        //for (const el of array) {
         //Desestructuro el
         let {
             nombre,
@@ -137,10 +125,26 @@ const mostrarProductos = async () => {
             agregarAlCarrito(el.id);
         })
     })
+   console.log(productos);
 }
-mostrarProductos()
 
-//const stockProductos = JSON.parse(datos)
+mostrarProductos()
+//filtro de productos por su TIPO
+
+    buscarTipo.addEventListener('change', async () => {
+        const respuesta = await fetch(datos)
+        const productos = await respuesta.json()
+        if (buscarTipo.value == 'all') {
+            mostrarProductos()
+        } else {
+            let arrayNuevo = productos.filter(item => item.tipo == buscarTipo.value) //array nuevo
+            mostrarProductos(arrayNuevo)
+            console.log(arrayNuevo);
+        }
+    })
+
+
+
 
 // uso id, para seleccionar puntualmente producto
 // find busca un solo elemento
@@ -195,6 +199,8 @@ function Carrito(productoAgregar) {
         }
     })
 }
+
+
 
 
 /* --------------------- Multiplica precio por cantidad --------------------- */
