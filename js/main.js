@@ -56,6 +56,7 @@ const precioFinal = carritoFinal.reduce( (acc, item) =>{
 
 console.log("El total a abonar es de $" + precioFinal + "\nGracias por su compra"); */
 
+
 //variable que irá almacenando las compras en un array
 let carritoDeCompras = []
 //Variables globales
@@ -66,6 +67,9 @@ const finCompra = document.getElementById('fin-compra')
 const precioTotal = document.getElementById('precioTotal');
 const buscarTipo = document.getElementById('buscarTipo')
 const botonTerminar = document.getElementById('terminar')
+const datos = "./js/datos.json"
+//const stockProductos = JSON.stringify ()
+
 
 
 
@@ -80,12 +84,15 @@ buscarTipo.addEventListener('change', () => {
     }
 })
 
-mostrarProductos(stockProductos)
+//mostrarProductos(stockProductos)
 
-function mostrarProductos(array) {
+const mostrarProductos = async () => {
     contenedorProductos.innerHTML = "" // Vacía html para mostrar solo los array filtrados
-    for (const el of array) {
-    //Desestructuro el
+    const respuesta = await fetch(datos)
+    const productos = await respuesta.json()
+    productos.forEach((el) => {
+    //for (const el of array) {
+        //Desestructuro el
         let {
             nombre,
             img,
@@ -129,9 +136,11 @@ function mostrarProductos(array) {
             }).showToast();
             agregarAlCarrito(el.id);
         })
-    }
+    })
 }
+mostrarProductos()
 
+//const stockProductos = JSON.parse(datos)
 
 // uso id, para seleccionar puntualmente producto
 // find busca un solo elemento
@@ -152,12 +161,15 @@ function agregarAlCarrito(id) {
     }
 }
 
-
-
 /* -------------------- Agrega HTML productos al carrito -------------------- */
 function Carrito(productoAgregar) {
     let div = document.createElement('div')
-    let {nombre,precio,id,cantidad} = productoAgregar
+    let {
+        nombre,
+        precio,
+        id,
+        cantidad
+    } = productoAgregar
     div.classList.add('producto-carrito')
     div.innerHTML = `<p> Producto: ${nombre}</p>
                 <p>Precio: $${precio}</p>
@@ -183,6 +195,7 @@ function Carrito(productoAgregar) {
         }
     })
 }
+
 
 /* --------------------- Multiplica precio por cantidad --------------------- */
 function actualizarCarrito() {
