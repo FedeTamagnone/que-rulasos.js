@@ -58,7 +58,7 @@ console.log("El total a abonar es de $" + precioFinal + "\nGracias por su compra
 
 
 /* ---------- variable que irá almacenando las compras en un array ---------- */
-let carritoDeCompras = [] || localStorage.getItem(JSON.parse("datos"))
+let carritoDeCompras = JSON.parse(localStorage.getItem('datos')) || []
 
 /* --------------------------- Variables globales --------------------------- */
 const contenedorProductos = document.getElementById('contenedor-productos');
@@ -155,6 +155,9 @@ function agregarAlCarrito(id) {
         carritoDeCompras.push(productoAgregar) //con eso pusheo al producto que seleccione con id al carrito
         actualizarCarrito()
         Carrito(productoAgregar)
+
+        /* ---------------------------- almaceno en localStorage --------------------------- */
+        localStorage.setItem('datos', JSON.stringify(carritoDeCompras))
     }
 }
 
@@ -173,12 +176,10 @@ function Carrito(productoAgregar) {
                 <p id="cantidad${id}" class="cantidades"> Cantidad: ${cantidad}</p>
                 <button id="eliminar${id}"> Restar producto </button>`
     contenedorCarrito.appendChild(div)
-    localStorage.setItem('datos', JSON.stringify(productoAgregar));
 
-    /*     let carritoLocal = localStorage.getItem(JSON.parse("datosCarrito"));
-        div.innerText = carritoLocal; */
 
-    //Funcion Eliminar: si cantidad es igual a 1 elimina producto, si candidad no es 1 resta productos
+
+//Funcion Eliminar: si cantidad es igual a 1 elimina producto, si candidad no es 1 resta productos
     let btnEliminar = document.getElementById(`eliminar${productoAgregar.id}`)
     btnEliminar.addEventListener('click', () => {
         if (productoAgregar.cantidad == 1) {
@@ -189,6 +190,7 @@ function Carrito(productoAgregar) {
             productoAgregar.cantidad = productoAgregar.cantidad - 1
             document.getElementById(`cantidad${productoAgregar.id}`).innerHTML = `<p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>`
             actualizarCarrito()
+
         }
     })
 }
