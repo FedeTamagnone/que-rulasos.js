@@ -57,10 +57,10 @@ const precioFinal = carritoFinal.reduce( (acc, item) =>{
 console.log("El total a abonar es de $" + precioFinal + "\nGracias por su compra"); */
 
 
-//variable que irá almacenando las compras en un array
-let carritoDeCompras = []
-//Variables globales
+/* ---------- variable que irá almacenando las compras en un array ---------- */
+let carritoDeCompras = [] || localStorage.getItem(JSON.parse("datos"))
 
+/* --------------------------- Variables globales --------------------------- */
 const contenedorProductos = document.getElementById('contenedor-productos');
 const contenedorCarrito = document.getElementById('carrito-contenedor');
 const finCompra = document.getElementById('fin-compra')
@@ -71,15 +71,23 @@ const datos = "./js/datos.json"
 //const stockProductos = JSON.stringify ()
 
 
+/* ------------------------- Fn que filtra productos ------------------------ */
 
+buscarTipo.addEventListener('change', () => {
+    if (buscarTipo.value == 'all') {
+        mostrarProductos(stockProductos)
+    } else {
+        let arrayNuevo = stockProductos.filter(item => item.tipo == buscarTipo.value) //array nuevo
+        mostrarProductos(arrayNuevo)
+        console.log(arrayNuevo);
+    }
+})
+mostrarProductos(stockProductos)
 
-
-const mostrarProductos = async () => {
+/* ------------------------ Fn crea card de porductos ----------------------- */
+function mostrarProductos(array) {
     contenedorProductos.innerHTML = "" // Vacía html para mostrar solo los array filtrados
-    const respuesta = await fetch(datos)
-    const productos = await respuesta.json()
-    productos.forEach((el) => {
-        //for (const el of array) {
+    for (const el of array) {
         //Desestructuro el
         let {
             nombre,
@@ -124,24 +132,9 @@ const mostrarProductos = async () => {
             }).showToast();
             agregarAlCarrito(el.id);
         })
-    })
-   console.log(productos);
+    }
+
 }
-
-mostrarProductos()
-//filtro de productos por su TIPO
-
-    buscarTipo.addEventListener('change', async () => {
-        const respuesta = await fetch(datos)
-        const productos = await respuesta.json()
-        if (buscarTipo.value == 'all') {
-            mostrarProductos()
-        } else {
-            let arrayNuevo = productos.filter(item => item.tipo == buscarTipo.value) //array nuevo
-            mostrarProductos(arrayNuevo)
-            console.log(arrayNuevo);
-        }
-    })
 
 
 
@@ -180,7 +173,7 @@ function Carrito(productoAgregar) {
                 <p id="cantidad${id}" class="cantidades"> Cantidad: ${cantidad}</p>
                 <button id="eliminar${id}"> Restar producto </button>`
     contenedorCarrito.appendChild(div)
-    localStorage.setItem('datosCarrito', JSON.stringify(carritoDeCompras));
+    localStorage.setItem('datos', JSON.stringify(productoAgregar));
 
     /*     let carritoLocal = localStorage.getItem(JSON.parse("datosCarrito"));
         div.innerText = carritoLocal; */
@@ -207,6 +200,15 @@ function Carrito(productoAgregar) {
 function actualizarCarrito() {
     precioTotal.innerText = carritoDeCompras.reduce((acc, el) => acc + (el.precio * el.cantidad), 0)
 }
+
+/* function remover () {
+    if (carritoDeCompras.length === 0) {
+        botonTerminar.classList.add("d-none")
+    } else {
+        botonTerminar.classList.remove("d-none")
+    }
+}
+remover() */
 
 botonTerminar.addEventListener("click", () => {
     Swal.fire({
