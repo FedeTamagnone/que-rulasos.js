@@ -64,6 +64,11 @@
 
     <h1 class="titulo-nuestros">Nuestros Productos</h1>
 
+    <input id="buscador" type="text" class="input" placeholder="Buscar producto">
+    <button id="btnBuscar">Buscar</button>
+
+
+
     <!-- --------------------------- Productos BEKIM --------------------------- -->
 
     <h3 id="bekim"> BEKIM</h3>
@@ -74,19 +79,17 @@
         </section>
 
         <section class="filtrador">
-            <h3>Buscar por:</h3>
+            <h3>Mostrar:</h3>
             <div class="buscador">
                 <select id="buscarTipo">
-                    <option value="all">Tipo</option>
+                    <option value="all">Todos</option>
                     <option value="crema">Crema</option>
                     <option value="gel">Gel</option>
                     <option value="shampoo">Shampoo</option>
                 </select>
-
-
             </div>
-
         </section>
+
 
 
     </main>
@@ -146,7 +149,8 @@
 
     <!-- -------------------------- libreria Toastify -------------------------- -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    
+
+
     <script src="js/productos.js"></script>
     <script src="js/main.js"></script>
 
