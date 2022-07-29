@@ -11,6 +11,7 @@ const botonTerminar = document.getElementById('terminar')
 const buscador = document.getElementById('buscador')
 const btnBuscar = document.getElementById('btnBuscar')
 const barra = document.getElementById('barra')
+const finalizar = document.getElementById('finalizarCompra')
 
 const datos = "./js/datos.json"
 //const stockProductos = JSON.stringify ()
@@ -191,6 +192,21 @@ function actualizarCarrito() {
     }
 }
 remover() */
+
+finalizar.addEventListener("click", () => {
+    let datosComprador = document.createElement("div")
+    datosComprador.innerHTML = ` <div>
+                            <div>
+                                <p>Hola</p>
+                            </div>
+                            <div>
+                                <p>Productos</p>
+                                <p>Más</p>
+                            </div>
+                        </div>`
+    contenedorCarrito.appendChild(datosComprador)
+})
+
 
 botonTerminar.addEventListener("click", () => {
     Swal.fire({

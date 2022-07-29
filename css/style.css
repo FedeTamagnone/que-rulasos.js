@@ -727,7 +727,7 @@ button :hover {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.075);
 }
-.carro-contenedor .carrito #terminar {
+.carro-contenedor .carrito #finalizarCompra {
   font-weight: bold;
   background-color: white;
   border-radius: 10px;
