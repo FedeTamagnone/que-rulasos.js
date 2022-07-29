@@ -114,6 +114,8 @@ function agregarAlCarrito(id) {
         document.getElementById(`cantidad${repite.id}`).innerHTML = `<p id="cantidad${repite.id}"> cantidad: ${repite.cantidad}</p>`
         actualizarCarrito()
         carritoDeCompras.push(repite)
+        localStorage.setItem('datos', JSON.stringify(carritoDeCompras))
+
     } else {
         let productoAgregar = stockProductos.find(el => el.id === id)
         productoAgregar.cantidad = 1
@@ -125,6 +127,10 @@ function agregarAlCarrito(id) {
         localStorage.setItem('datos', JSON.stringify(carritoDeCompras))
     }
 }
+
+
+
+
 
 /* -------------------- Agrega HTML productos al carrito -------------------- */
 function Carrito(productoAgregar) {
@@ -139,7 +145,8 @@ function Carrito(productoAgregar) {
     div.innerHTML = `<p> Producto: ${nombre}</p>
                 <p>Precio: $${precio}</p>
                 <p id="cantidad${id}" class="cantidades"> Cantidad: ${cantidad}</p>
-                <button id="eliminar${id}"> Restar producto </button>`
+                <button class ="botonEliminar" id="eliminar${id}"> - </button>
+                <button class ="botonEliminar" id="sumar${id}"> + </button>`
     contenedorCarrito.appendChild(div)
 
 
@@ -155,10 +162,18 @@ function Carrito(productoAgregar) {
             productoAgregar.cantidad = productoAgregar.cantidad - 1
             document.getElementById(`cantidad${productoAgregar.id}`).innerHTML = `<p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>`
             actualizarCarrito()
-
         }
     })
+
+    let btnSumar = document.getElementById(`sumar${productoAgregar.id}`)
+    btnSumar.addEventListener('click', () => {
+        productoAgregar.cantidad = productoAgregar.cantidad + 1
+        document.getElementById(`cantidad${productoAgregar.id}`).innerHTML = `<p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>`
+        actualizarCarrito()
+    })
 }
+
+
 
 
 

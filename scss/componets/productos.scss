@@ -8,13 +8,15 @@
     letter-spacing: 2px;
     margin: 40px 0 50px 0;
 }
-#buscador{
-    
+
+#buscador {
+
     margin: 0 10px;
     background-color: rgb(255, 255, 255);
     border: 1cm;
     border-radius: 5px;
 }
+
 #bekim {
     font-family: 'Quicksand', sans-serif;
     font-size: 300%;
@@ -85,6 +87,7 @@ main {
     }
 }
 
+
 img {
     width: 50%;
     margin-top: 30px;
@@ -135,6 +138,7 @@ button {
                 button {
                     color: black;
                     margin: 0;
+                    background-color: rgba(0, 0, 0, 0.075);
                 }
 
             }
